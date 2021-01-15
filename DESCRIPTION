@@ -1,0 +1,12 @@
+Package: gistoolmkl
+Type: Package
+Title: GIS-Tool Analisys of Marine Coastal Areas
+Version: 0.1.0
+Author: Mikkel Keller Lees
+Maintainer: Mikkel Keller Lees <milee16@student.sdu.dk>
+Description: Performs analisys of GIS data by vertical profiles and monod kinetics analisys.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+depends: R (>= 3.5.0)
