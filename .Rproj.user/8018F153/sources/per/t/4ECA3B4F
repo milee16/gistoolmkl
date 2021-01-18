@@ -1,16 +1,16 @@
 {
-    "id": "5BFB3EBA",
-    "path": "D:/My R packages/gistoolmkl/R/gistoolS3G6.R",
-    "project_path": "R/gistoolS3G6.R",
+    "id": "4ECA3B4F",
+    "path": "D:/My R packages/gistoolmkl/R/gistoolS3G5.R",
+    "project_path": "R/gistoolS3G5.R",
     "type": "r_source",
-    "hash": "0",
+    "hash": "1289274316",
     "contents": "",
     "dirty": false,
-    "created": 1610737853073.0,
+    "created": 1610737853499.0,
     "source_on_save": false,
-    "relative_order": 1,
+    "relative_order": 2,
     "properties": {
-        "cursorPosition": "2,27",
+        "cursorPosition": "2,28",
         "scrollLine": "0"
     },
     "folds": "",
@@ -18,7 +18,7 @@
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1610738016927,
+    "last_content_update": 1610738016967,
     "read_only": false,
     "read_only_alternatives": []
 }
