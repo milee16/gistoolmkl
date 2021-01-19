@@ -9,9 +9,8 @@ gistoolS3G6 <- function() {
   if(!require(extrafont)) install.packages("extrafont")
   library(ggplot2)
   library(extrafont)
-  font_import()
+  font_import(pattern = 'times', prompt = F)
   loadfonts(device = "win")
-  fonts()
 
   theme_pub <<- function(base_size = 14, base_family = "Times New Roman",
                          line_size = 0.25, ...) {
