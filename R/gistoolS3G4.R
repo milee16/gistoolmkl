@@ -1565,7 +1565,7 @@ gistoolS3G4 <- function() {
     WB_B_lo_b_vs_lower + theme_pub() + labs(x = expression('Benthic light'~(mu*E*~m^-2*~s^-1)), y = '') + theme(legend.justification = c(1,2.15), plot.tag.position = c(0.952,0.77), plot.tag = element_text(size = 22), axis.title = element_text(size = 18)) +
     plot_layout(ncol = 2) +
     plot_annotation(tag_levels = 'A') +
-    ggsave(filename = 'WB_B_AG_production.tiff',
+    ggsave(filename = 'WB_SB_AG_production.tiff',
 
            width = 30,
            height = 30,
