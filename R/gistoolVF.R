@@ -1419,6 +1419,8 @@ gistoolVF <- function() {
 
   WB_B_DIN_b_AG <<- c((sum(WB_B_G1_no_Aspec$DIN_b))/WB_sumvolume_G1,(sum(WB_B_G2_no_Aspec$DIN_b))/WB_sumvolume_G2,(sum(WB_B_G3_no_Aspec$DIN_b))/WB_sumvolume_G3,(sum(WB_B_G4_no_Aspec$DIN_b))/WB_sumvolume_G4,(sum(WB_B_G5_no_Aspec$DIN_b))/WB_sumvolume_G5)
   WB_B_DIP_b_AG <<- c((sum(WB_B_G1_no_Aspec$DIP_b))/WB_sumvolume_G1,(sum(WB_B_G2_no_Aspec$DIP_b))/WB_sumvolume_G2,(sum(WB_B_G3_no_Aspec$DIP_b))/WB_sumvolume_G3,(sum(WB_B_G4_no_Aspec$DIP_b))/WB_sumvolume_G4,(sum(WB_B_G5_no_Aspec$DIP_b))/WB_sumvolume_G5)
+  WB_B_lo_b_AG <<- c((sum(WB_B_G1_no_Aspec$lo_b))/WB_sumarea_G1,(sum(WB_B_G2_no_Aspec$lo_b))/WB_sumarea_G2,(sum(WB_B_G3_no_Aspec$lo_b))/WB_sumarea_G3,(sum(WB_B_G4_no_Aspec$lo_b))/WB_sumarea_G4,(sum(WB_B_G5_no_Aspec$lo_b))/WB_sumarea_G5)
+
 
 
   WB_S1_EC_AG <<- c((sum(WB_S1_G1_no_Aspec$EC))/WB_sumarea_G1,(sum(WB_S1_G2_no_Aspec$EC))/WB_sumarea_G2,(sum(WB_S1_G3_no_Aspec$EC))/WB_sumarea_G3,(sum(WB_S1_G4_no_Aspec$EC))/WB_sumarea_G4,(sum(WB_S1_G5_no_Aspec$EC))/WB_sumarea_G5)
@@ -1454,6 +1456,7 @@ gistoolVF <- function() {
 
   WB_S1_DIN_b_AG <<- c((sum(WB_S1_G1_no_Aspec$DIN_b))/WB_sumvolume_G1,(sum(WB_S1_G2_no_Aspec$DIN_b))/WB_sumvolume_G2,(sum(WB_S1_G3_no_Aspec$DIN_b))/WB_sumvolume_G3,(sum(WB_S1_G4_no_Aspec$DIN_b))/WB_sumvolume_G4,(sum(WB_S1_G5_no_Aspec$DIN_b))/WB_sumvolume_G5)
   WB_S1_DIP_b_AG <<- c((sum(WB_S1_G1_no_Aspec$DIP_b))/WB_sumvolume_G1,(sum(WB_S1_G2_no_Aspec$DIP_b))/WB_sumvolume_G2,(sum(WB_S1_G3_no_Aspec$DIP_b))/WB_sumvolume_G3,(sum(WB_S1_G4_no_Aspec$DIP_b))/WB_sumvolume_G4,(sum(WB_S1_G5_no_Aspec$DIP_b))/WB_sumvolume_G5)
+  WB_S1_lo_b_AG <<- c((sum(WB_S1_G1_no_Aspec$lo_b))/WB_sumarea_G1,(sum(WB_S1_G2_no_Aspec$lo_b))/WB_sumarea_G2,(sum(WB_S1_G3_no_Aspec$lo_b))/WB_sumarea_G3,(sum(WB_S1_G4_no_Aspec$lo_b))/WB_sumarea_G4,(sum(WB_S1_G5_no_Aspec$lo_b))/WB_sumarea_G5)
 
 
 
@@ -1490,18 +1493,19 @@ gistoolVF <- function() {
 
   WB_S2_DIN_b_AG <<- c((sum(WB_S2_G1_no_Aspec$DIN_b))/WB_sumvolume_G1,(sum(WB_S2_G2_no_Aspec$DIN_b))/WB_sumvolume_G2,(sum(WB_S2_G3_no_Aspec$DIN_b))/WB_sumvolume_G3,(sum(WB_S2_G4_no_Aspec$DIN_b))/WB_sumvolume_G4,(sum(WB_S2_G5_no_Aspec$DIN_b))/WB_sumvolume_G5)
   WB_S2_DIP_b_AG <<- c((sum(WB_S2_G1_no_Aspec$DIP_b))/WB_sumvolume_G1,(sum(WB_S2_G2_no_Aspec$DIP_b))/WB_sumvolume_G2,(sum(WB_S2_G3_no_Aspec$DIP_b))/WB_sumvolume_G3,(sum(WB_S2_G4_no_Aspec$DIP_b))/WB_sumvolume_G4,(sum(WB_S2_G5_no_Aspec$DIP_b))/WB_sumvolume_G5)
+  WB_S2_lo_b_AG <<- c((sum(WB_S2_G1_no_Aspec$lo_b))/WB_sumarea_G1,(sum(WB_S2_G2_no_Aspec$lo_b))/WB_sumarea_G2,(sum(WB_S2_G3_no_Aspec$lo_b))/WB_sumarea_G3,(sum(WB_S2_G4_no_Aspec$lo_b))/WB_sumarea_G4,(sum(WB_S2_G5_no_Aspec$lo_b))/WB_sumarea_G5)
 
 
 
   #Create final data frame with single values for primary producers (biomass and production) for all gradient polygons and all model scenarios. Also adds column "scenario"
 
-  WB_B_AG_ASSV <<- data.frame(WB_gradient_no,WB_B_avgDIN_AG,WB_B_avgDIP_AG,WB_B_EC_AG,WB_B_EN_AG,WB_B_EP_AG,WB_B_BC2_AG,WB_B_BN2_AG,WB_B_BP2_AG,WB_B_BC1_AG,WB_B_BN1_AG,WB_B_BP1_AG,WB_B_BDC_AG,WB_B_BDN_AG,WB_B_BDP_AG,WB_B_PC_AG,WB_B_PN_AG,WB_B_PP_AG,WB_B_CH_AG,WB_B_DIN_AG,WB_B_DIP_AG,WB_B_PREC_AG,WB_B_PRBC2_AG,WB_B_PRBC1_AG,WB_B_PRBDC_AG,WB_B_PRPC_AG,WB_B_DIN_b_AG,WB_B_DIP_b_AG) %>%
+  WB_B_AG_ASSV <<- data.frame(WB_gradient_no,WB_B_avgDIN_AG,WB_B_avgDIP_AG,WB_B_EC_AG,WB_B_EN_AG,WB_B_EP_AG,WB_B_BC2_AG,WB_B_BN2_AG,WB_B_BP2_AG,WB_B_BC1_AG,WB_B_BN1_AG,WB_B_BP1_AG,WB_B_BDC_AG,WB_B_BDN_AG,WB_B_BDP_AG,WB_B_PC_AG,WB_B_PN_AG,WB_B_PP_AG,WB_B_CH_AG,WB_B_DIN_AG,WB_B_DIP_AG,WB_B_PREC_AG,WB_B_PRBC2_AG,WB_B_PRBC1_AG,WB_B_PRBDC_AG,WB_B_PRPC_AG,WB_B_DIN_b_AG,WB_B_DIP_b_AG,WB_B_lo_b_AG) %>%
     add_column(scenario = "Baseline", .before = "WB_gradient_no")
 
-  WB_S1_AG_ASSV <<- data.frame(WB_gradient_no,WB_S1_avgDIN_AG,WB_S1_avgDIP_AG,WB_S1_EC_AG,WB_S1_EN_AG,WB_S1_EP_AG,WB_S1_BC2_AG,WB_S1_BN2_AG,WB_S1_BP2_AG,WB_S1_BC1_AG,WB_S1_BN1_AG,WB_S1_BP1_AG,WB_S1_BDC_AG,WB_S1_BDN_AG,WB_S1_BDP_AG,WB_S1_PC_AG,WB_S1_PN_AG,WB_S1_PP_AG,WB_S1_CH_AG,WB_S1_DIN_AG,WB_S1_DIP_AG,WB_S1_PREC_AG,WB_S1_PRBC2_AG,WB_S1_PRBC1_AG,WB_S1_PRBDC_AG,WB_S1_PRPC_AG,WB_S1_DIN_b_AG,WB_S1_DIP_b_AG) %>%
+  WB_S1_AG_ASSV <<- data.frame(WB_gradient_no,WB_S1_avgDIN_AG,WB_S1_avgDIP_AG,WB_S1_EC_AG,WB_S1_EN_AG,WB_S1_EP_AG,WB_S1_BC2_AG,WB_S1_BN2_AG,WB_S1_BP2_AG,WB_S1_BC1_AG,WB_S1_BN1_AG,WB_S1_BP1_AG,WB_S1_BDC_AG,WB_S1_BDN_AG,WB_S1_BDP_AG,WB_S1_PC_AG,WB_S1_PN_AG,WB_S1_PP_AG,WB_S1_CH_AG,WB_S1_DIN_AG,WB_S1_DIP_AG,WB_S1_PREC_AG,WB_S1_PRBC2_AG,WB_S1_PRBC1_AG,WB_S1_PRBDC_AG,WB_S1_PRPC_AG,WB_S1_DIN_b_AG,WB_S1_DIP_b_AG,WB_S1_lo_b_AG) %>%
     add_column(scenario = "N-30%", .before = "WB_gradient_no")
 
-  WB_S2_AG_ASSV <<- data.frame(WB_gradient_no,WB_S2_avgDIN_AG,WB_S2_avgDIP_AG,WB_S2_EC_AG,WB_S2_EN_AG,WB_S2_EP_AG,WB_S2_BC2_AG,WB_S2_BN2_AG,WB_S2_BP2_AG,WB_S2_BC1_AG,WB_S2_BN1_AG,WB_S2_BP1_AG,WB_S2_BDC_AG,WB_S2_BDN_AG,WB_S2_BDP_AG,WB_S2_PC_AG,WB_S2_PN_AG,WB_S2_PP_AG,WB_S2_CH_AG,WB_S2_DIN_AG,WB_S2_DIP_AG,WB_S2_PREC_AG,WB_S2_PRBC2_AG,WB_S2_PRBC1_AG,WB_S2_PRBDC_AG,WB_S2_PRPC_AG,WB_S2_DIN_b_AG,WB_S2_DIP_b_AG) %>%
+  WB_S2_AG_ASSV <<- data.frame(WB_gradient_no,WB_S2_avgDIN_AG,WB_S2_avgDIP_AG,WB_S2_EC_AG,WB_S2_EN_AG,WB_S2_EP_AG,WB_S2_BC2_AG,WB_S2_BN2_AG,WB_S2_BP2_AG,WB_S2_BC1_AG,WB_S2_BN1_AG,WB_S2_BP1_AG,WB_S2_BDC_AG,WB_S2_BDN_AG,WB_S2_BDP_AG,WB_S2_PC_AG,WB_S2_PN_AG,WB_S2_PP_AG,WB_S2_CH_AG,WB_S2_DIN_AG,WB_S2_DIP_AG,WB_S2_PREC_AG,WB_S2_PRBC2_AG,WB_S2_PRBC1_AG,WB_S2_PRBDC_AG,WB_S2_PRPC_AG,WB_S2_DIN_b_AG,WB_S2_DIP_b_AG,WB_S2_lo_b_AG) %>%
     add_column(scenario = "P-30%", .before = "WB_gradient_no")
 
   #Rename all column headers to enable merging of tables
@@ -1542,7 +1546,8 @@ gistoolVF <- function() {
       PRBDC = WB_B_PRBDC_AG,
       PRPC = WB_B_PRPC_AG,
       DIN_b = WB_B_DIN_b_AG,
-      DIP_b = WB_B_DIP_b_AG
+      DIP_b = WB_B_DIP_b_AG,
+      lo_b = WB_B_lo_b_AG
     )
 
   WB_S1 <<- WB_S1_AG_ASSV %>%
@@ -1582,7 +1587,8 @@ gistoolVF <- function() {
       PRBDC = WB_S1_PRBDC_AG,
       PRPC = WB_S1_PRPC_AG,
       DIN_b = WB_S1_DIN_b_AG,
-      DIP_b = WB_S1_DIP_b_AG
+      DIP_b = WB_S1_DIP_b_AG,
+      lo_b = WB_S1_lo_b_AG
     )
 
   WB_S2 <<- WB_S2_AG_ASSV %>%
@@ -1622,7 +1628,8 @@ gistoolVF <- function() {
       PRBDC = WB_S2_PRBDC_AG,
       PRPC = WB_S2_PRPC_AG,
       DIN_b = WB_S2_DIN_b_AG,
-      DIP_b = WB_S2_DIP_b_AG
+      DIP_b = WB_S2_DIP_b_AG,
+      lo_b = WB_S2_lo_b_AG
     )
 
   #Merging tables
