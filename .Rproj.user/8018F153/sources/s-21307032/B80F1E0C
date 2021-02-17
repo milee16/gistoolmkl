@@ -3,7 +3,7 @@
     "path": "D:/My R packages/gistoolmkl/R/gistoolHF.R",
     "project_path": "R/gistoolHF.R",
     "type": "r_source",
-    "hash": "299619613",
+    "hash": "0",
     "contents": "",
     "dirty": false,
     "created": 1611359170456.0,
@@ -14,11 +14,11 @@
         "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1611359279,
+    "lastKnownWriteTime": 1613562703,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1611359279677,
+    "last_content_update": 1613562703,
     "read_only": false,
     "read_only_alternatives": []
 }
