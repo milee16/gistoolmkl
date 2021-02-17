@@ -1499,13 +1499,13 @@ gistoolVF <- function() {
 
   #Create final data frame with single values for primary producers (biomass and production) for all gradient polygons and all model scenarios. Also adds column "scenario"
 
-  WB_B_AG_ASSV <<- data.frame(WB_gradient_no,WB_B_avgDIN_AG,WB_B_avgDIP_AG,WB_B_EC_AG,WB_B_EN_AG,WB_B_EP_AG,WB_B_BC2_AG,WB_B_BN2_AG,WB_B_BP2_AG,WB_B_BC1_AG,WB_B_BN1_AG,WB_B_BP1_AG,WB_B_BDC_AG,WB_B_BDN_AG,WB_B_BDP_AG,WB_B_PC_AG,WB_B_PN_AG,WB_B_PP_AG,WB_B_CH_AG,WB_B_DIN_AG,WB_B_DIP_AG,WB_B_PREC_AG,WB_B_PRBC2_AG,WB_B_PRBC1_AG,WB_B_PRBDC_AG,WB_B_PRPC_AG,WB_B_DIN_b_AG,WB_B_DIP_b_AG,WB_B_lo_b_AG) %>%
+  WB_B_AG_ASSV <<- data.frame(WB_gradient_no,WB_B_avgDIN_AG,WB_B_avgDIP_AG,WB_B_avgDIN_b_AG,WB_B_avgDIP_b_AG,WB_B_EC_AG,WB_B_EN_AG,WB_B_EP_AG,WB_B_BC2_AG,WB_B_BN2_AG,WB_B_BP2_AG,WB_B_BC1_AG,WB_B_BN1_AG,WB_B_BP1_AG,WB_B_BDC_AG,WB_B_BDN_AG,WB_B_BDP_AG,WB_B_PC_AG,WB_B_PN_AG,WB_B_PP_AG,WB_B_CH_AG,WB_B_DIN_AG,WB_B_DIP_AG,WB_B_PREC_AG,WB_B_PRBC2_AG,WB_B_PRBC1_AG,WB_B_PRBDC_AG,WB_B_PRPC_AG,WB_B_DIN_b_AG,WB_B_DIP_b_AG,WB_B_lo_b_AG) %>%
     add_column(scenario = "Baseline", .before = "WB_gradient_no")
 
-  WB_S1_AG_ASSV <<- data.frame(WB_gradient_no,WB_S1_avgDIN_AG,WB_S1_avgDIP_AG,WB_S1_EC_AG,WB_S1_EN_AG,WB_S1_EP_AG,WB_S1_BC2_AG,WB_S1_BN2_AG,WB_S1_BP2_AG,WB_S1_BC1_AG,WB_S1_BN1_AG,WB_S1_BP1_AG,WB_S1_BDC_AG,WB_S1_BDN_AG,WB_S1_BDP_AG,WB_S1_PC_AG,WB_S1_PN_AG,WB_S1_PP_AG,WB_S1_CH_AG,WB_S1_DIN_AG,WB_S1_DIP_AG,WB_S1_PREC_AG,WB_S1_PRBC2_AG,WB_S1_PRBC1_AG,WB_S1_PRBDC_AG,WB_S1_PRPC_AG,WB_S1_DIN_b_AG,WB_S1_DIP_b_AG,WB_S1_lo_b_AG) %>%
+  WB_S1_AG_ASSV <<- data.frame(WB_gradient_no,WB_S1_avgDIN_AG,WB_S1_avgDIP_AG,WB_S1_avgDIN_b_AG,WB_S1_avgDIP_b_AG,WB_S1_EC_AG,WB_S1_EN_AG,WB_S1_EP_AG,WB_S1_BC2_AG,WB_S1_BN2_AG,WB_S1_BP2_AG,WB_S1_BC1_AG,WB_S1_BN1_AG,WB_S1_BP1_AG,WB_S1_BDC_AG,WB_S1_BDN_AG,WB_S1_BDP_AG,WB_S1_PC_AG,WB_S1_PN_AG,WB_S1_PP_AG,WB_S1_CH_AG,WB_S1_DIN_AG,WB_S1_DIP_AG,WB_S1_PREC_AG,WB_S1_PRBC2_AG,WB_S1_PRBC1_AG,WB_S1_PRBDC_AG,WB_S1_PRPC_AG,WB_S1_DIN_b_AG,WB_S1_DIP_b_AG,WB_S1_lo_b_AG) %>%
     add_column(scenario = "N-30%", .before = "WB_gradient_no")
 
-  WB_S2_AG_ASSV <<- data.frame(WB_gradient_no,WB_S2_avgDIN_AG,WB_S2_avgDIP_AG,WB_S2_EC_AG,WB_S2_EN_AG,WB_S2_EP_AG,WB_S2_BC2_AG,WB_S2_BN2_AG,WB_S2_BP2_AG,WB_S2_BC1_AG,WB_S2_BN1_AG,WB_S2_BP1_AG,WB_S2_BDC_AG,WB_S2_BDN_AG,WB_S2_BDP_AG,WB_S2_PC_AG,WB_S2_PN_AG,WB_S2_PP_AG,WB_S2_CH_AG,WB_S2_DIN_AG,WB_S2_DIP_AG,WB_S2_PREC_AG,WB_S2_PRBC2_AG,WB_S2_PRBC1_AG,WB_S2_PRBDC_AG,WB_S2_PRPC_AG,WB_S2_DIN_b_AG,WB_S2_DIP_b_AG,WB_S2_lo_b_AG) %>%
+  WB_S2_AG_ASSV <<- data.frame(WB_gradient_no,WB_S2_avgDIN_AG,WB_S2_avgDIP_AG,WB_S2_avgDIN_b_AG,WB_S2_avgDIP_b_AG,WB_S2_EC_AG,WB_S2_EN_AG,WB_S2_EP_AG,WB_S2_BC2_AG,WB_S2_BN2_AG,WB_S2_BP2_AG,WB_S2_BC1_AG,WB_S2_BN1_AG,WB_S2_BP1_AG,WB_S2_BDC_AG,WB_S2_BDN_AG,WB_S2_BDP_AG,WB_S2_PC_AG,WB_S2_PN_AG,WB_S2_PP_AG,WB_S2_CH_AG,WB_S2_DIN_AG,WB_S2_DIP_AG,WB_S2_PREC_AG,WB_S2_PRBC2_AG,WB_S2_PRBC1_AG,WB_S2_PRBDC_AG,WB_S2_PRPC_AG,WB_S2_DIN_b_AG,WB_S2_DIP_b_AG,WB_S2_lo_b_AG) %>%
     add_column(scenario = "P-30%", .before = "WB_gradient_no")
 
   #Rename all column headers to enable merging of tables
@@ -1514,6 +1514,8 @@ gistoolVF <- function() {
 
       AvgDIN = WB_B_avgDIN_AG,
       AvgDIP = WB_B_avgDIP_AG,
+      AvgDIN_b = WB_B_avgDIN_b_AG,
+      AvgDIP_b = WB_B_avgDIP_b_AG,
 
       EC = WB_B_EC_AG,
       EN = WB_B_EN_AG,
@@ -1555,6 +1557,8 @@ gistoolVF <- function() {
 
       AvgDIN = WB_S1_avgDIN_AG,
       AvgDIP = WB_S1_avgDIP_AG,
+      AvgDIN_b = WB_S1_avgDIN_b_AG,
+      AvgDIP_b = WB_S1_avgDIP_b_AG,
 
       EC = WB_S1_EC_AG,
       EN = WB_S1_EN_AG,
@@ -1596,6 +1600,8 @@ gistoolVF <- function() {
 
       AvgDIN = WB_S2_avgDIN_AG,
       AvgDIP = WB_S2_avgDIP_AG,
+      AvgDIN_b = WB_S2_avgDIN_b_AG,
+      AvgDIP_b = WB_S2_avgDIP_b_AG,
 
       EC = WB_S2_EC_AG,
       EN = WB_S2_EN_AG,
@@ -2896,6 +2902,31 @@ gistoolVF <- function() {
            units = 'cm',
            device='tiff',
            dpi=300)
+
+  #HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH   Monod limitation table   HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+
+
+  WB_limitation_table <<- WB_AS_AG_FINAL %>%
+    select(scenario, WB_gradient_no, AvgDIN, AvgDIP, AvgDIN_b, AvgDIP_b, lo_b) %>%
+    mutate(
+      EC_lo_b_lim = lo_b / (lo_b + EC_kmlight_C),
+
+      BC1_DIN_lim = AvgDIN_b / (AvgDIN_b + BC1_kmDIN_C),
+      BC1_DIP_lim = AvgDIP_b / (AvgDIP_b + BC1_kmDIP_C),
+      BC1_lo_b_lim = lo_b / (lo_b + BC1_kmlight_C),
+
+      PC_DIN_lim = AvgDIN / (AvgDIN + PC_kmDIN_C),
+      PC_DIP_lim = AvgDIP / (AvgDIP + PC_kmDIP_C),
+      PC_lo_b_lim = lo_b / (lo_b + PC_kmlight_C),
+
+      AvgDIN = NULL,
+      AvgDIP = NULL,
+      AvgDIN_b = NULL,
+      AvgDIP_b = NULL,
+      lo_b = NULL
+    )
+
+  write.csv(WB_limitation_table, 'WB_limitation_table.csv')
 
 
 }
