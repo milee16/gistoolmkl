@@ -1,21 +1,24 @@
 {
-    "id": "89CB4B40",
+    "id": "65552C22",
     "path": "D:/My R packages/gistoolmkl/R/gistoolOF_MM.R",
     "project_path": "R/gistoolOF_MM.R",
     "type": "r_source",
-    "hash": "815149821",
+    "hash": "1254175785",
     "contents": "",
     "dirty": false,
-    "created": 1614020057372.0,
+    "created": 1614020244618.0,
     "source_on_save": false,
     "relative_order": 10,
-    "properties": {},
+    "properties": {
+        "cursorPosition": "6,12",
+        "scrollLine": "0"
+    },
     "folds": "",
-    "lastKnownWriteTime": 1613598041,
+    "lastKnownWriteTime": 1614020267,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1613598041,
+    "last_content_update": 1614020267309,
     "read_only": false,
     "read_only_alternatives": []
 }

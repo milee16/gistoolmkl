@@ -1,21 +1,24 @@
 {
-    "id": "E34A86A9",
+    "id": "9C82E1B4",
     "path": "D:/My R packages/gistoolmkl/R/gistoolHF_MM.R",
     "project_path": "R/gistoolHF_MM.R",
     "type": "r_source",
-    "hash": "2205881377",
+    "hash": "3081505123",
     "contents": "",
     "dirty": false,
-    "created": 1614020056078.0,
+    "created": 1614020243648.0,
     "source_on_save": false,
     "relative_order": 9,
-    "properties": {},
+    "properties": {
+        "cursorPosition": "6,9",
+        "scrollLine": "0"
+    },
     "folds": "",
-    "lastKnownWriteTime": 1613597398,
+    "lastKnownWriteTime": 1614020267,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1613597398,
+    "last_content_update": 1614020267243,
     "read_only": false,
     "read_only_alternatives": []
 }
