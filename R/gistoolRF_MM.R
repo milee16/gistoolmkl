@@ -1411,7 +1411,7 @@ gistoolRF_MM <- function() {
     xlab('Avg. DIN ('*'g C'~m^-2*')') +
     ylab('Eelgrass production ('*' g C'~m^-2~GS^-1*')') +
     scale_x_continuous(limits = c(0,0.45), breaks = seq(0,0.45, by = 0.1), labels = scales::number_format(accuracy = 0.05)) +
-    scale_y_continuous(limits = c(0,25), breaks = seq(0,25, by = 5), labels = scales::number_format(accuracy = 1))
+    scale_y_continuous(limits = c(0,40), breaks = seq(0,40, by = 5), labels = scales::number_format(accuracy = 1))
 
 
   WB_panel_PREC_vs_AvgDIN <<- WB_PREC_vs_AvgDIN + theme_pub()
@@ -1426,7 +1426,7 @@ gistoolRF_MM <- function() {
     xlab('Avg. DIN ('*'g C'~m^-2*')') +
     ylab('Opp. macroalgae production ('*' g C'~m^-2~GS^-1*')') +
     scale_x_continuous(limits = c(0,0.45), breaks = seq(0,0.45, by = 0.1), labels = scales::number_format(accuracy = 0.05)) +
-    scale_y_continuous(limits = c(0,35), breaks = seq(0,35, by = 5), labels = scales::number_format(accuracy = 1))
+    scale_y_continuous(limits = c(0,40), breaks = seq(0,40, by = 5), labels = scales::number_format(accuracy = 1))
 
   WB_panel_PRBC1_vs_AvgDIN <<- WB_PRBC1_vs_AvgDIN + theme_pub()
 
@@ -1493,7 +1493,7 @@ gistoolRF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'black', 'black', 'white')) +
     labs(x = expression('Eelgrass production'~(g~C*~m^-2~GS^-1)), y = expression('Depth'~(m)))+
-    scale_x_continuous(limits = c(0,120), breaks = seq(0,120, by = 20), labels = scales::number_format(accuracy = 1), position = 'top') +
+    scale_x_continuous(limits = c(0,100), breaks = seq(0,100, by = 20), labels = scales::number_format(accuracy = 1), position = 'top') +
     scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 2), labels = scales::number_format(accuracy = 1))
 
   WB_B_PREC_vs_lower + theme_pub()
@@ -1506,8 +1506,8 @@ gistoolRF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'black', 'black', 'white')) +
     labs(x = expression('Opp. macroalgae Production'~(g~C*~m^-2~GS^-1)), y = expression('Depth'~(m)))+
-    scale_x_continuous(limits = c(0,45), breaks = seq(0,45, by = 5), labels = scales::number_format(accuracy = 1), position = 'top') +
-    scale_y_continuous(limits = c(-8,0), breaks = seq(-8,0, by = 2), labels = scales::number_format(accuracy = 1))
+    scale_x_continuous(limits = c(0,100), breaks = seq(0,100, by = 10), labels = scales::number_format(accuracy = 1), position = 'top') +
+    scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
   WB_B_PRBC1_vs_lower + theme_pub()
@@ -1521,7 +1521,7 @@ gistoolRF_MM <- function() {
     scale_fill_manual(values = c('black', 'black', 'black', 'white')) +
     labs(x = expression('Perennial macroalgae Production'~(g~C*~m^-2~GS^-1)), y = expression('Depth'~(m)))+
     scale_x_continuous(limits = c(0,18), breaks = seq(0,18, by = 3), labels = scales::number_format(accuracy = 1), position = 'top') +
-    scale_y_continuous(limits = c(-8,0), breaks = seq(-8,0, by = 2), labels = scales::number_format(accuracy = 1))
+    scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
   WB_B_PRBC2_vs_lower + theme_pub()
@@ -1534,8 +1534,8 @@ gistoolRF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'black', 'black', 'white')) +
     labs(x = expression('Benthic diatom Production'~(g~C*~m^-2~GS^-1)), y = expression('Depth'~(m)))+
-    scale_x_continuous(limits = c(0,50), breaks = seq(0,50, by = 5), labels = scales::number_format(accuracy = 1), position = 'top') +
-    scale_y_continuous(limits = c(-10,0), breaks = seq(-10,0, by = 2), labels = scales::number_format(accuracy = 1))
+    scale_x_continuous(limits = c(0,210), breaks = seq(0,210, by = 20), labels = scales::number_format(accuracy = 1), position = 'top') +
+    scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
   WB_B_PRBDC_vs_lower + theme_pub()
@@ -1549,7 +1549,7 @@ gistoolRF_MM <- function() {
     scale_fill_manual(values = c('black', 'black', 'black', 'white')) +
     labs(x = expression('Phytoplankton biomass'~(g~C*~m^-3)), y = expression('Depth'~(m)))+
     scale_x_continuous(limits = c(0,2), breaks = seq(0,2, by = 0.3), labels = scales::number_format(accuracy = 0.1), position = 'top') +
-    scale_y_continuous(limits = c(-16,0), breaks = seq(-16,0, by = 3), labels = scales::number_format(accuracy = 1))
+    scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
   WB_B_PC_vs_lower + theme_pub()
@@ -1563,7 +1563,7 @@ gistoolRF_MM <- function() {
     scale_fill_manual(values = c('black', 'black', 'black', 'white')) +
     labs(x = expression('Benthic light'~(mu*E*~m^-2*~s^-1)), y = expression('Depth'~(m)))+
     scale_x_continuous(limits = c(0,650), breaks = seq(0,650, by = 100), labels = scales::number_format(accuracy = 1), position = 'top') +
-    scale_y_continuous(limits = c(-16,0), breaks = seq(-16,0, by = 3), labels = scales::number_format(accuracy = 1))
+    scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
   WB_B_lo_b_vs_lower + theme_pub()
@@ -1595,7 +1595,7 @@ gistoolRF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'black', 'black', 'white')) +
     labs(x = expression('Eelgrass Production'~(g~C*~m^-2~GS^-1)), y = expression('Depth'~(m)))+
-    scale_x_continuous(limits = c(0,120), breaks = seq(0,120, by = 20), labels = scales::number_format(accuracy = 1), position = 'top') +
+    scale_x_continuous(limits = c(0,100), breaks = seq(0,100, by = 20), labels = scales::number_format(accuracy = 1), position = 'top') +
     scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 2), labels = scales::number_format(accuracy = 1))
 
   WB_S1_PREC_vs_lower + theme_pub()
@@ -1608,8 +1608,8 @@ gistoolRF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'black', 'black', 'white')) +
     labs(x = expression('Opp. macroalgae Production'~(g~C*~m^-2~GS^-1)), y = expression('Depth'~(m)))+
-    scale_x_continuous(limits = c(0,45), breaks = seq(0,45, by = 5), labels = scales::number_format(accuracy = 1), position = 'top') +
-    scale_y_continuous(limits = c(-8,0), breaks = seq(-8,0, by = 2), labels = scales::number_format(accuracy = 1))
+    scale_x_continuous(limits = c(0,100), breaks = seq(0,100, by = 10), labels = scales::number_format(accuracy = 1), position = 'top') +
+    scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
   WB_S1_PRBC1_vs_lower + theme_pub()
@@ -1623,7 +1623,7 @@ gistoolRF_MM <- function() {
     scale_fill_manual(values = c('black', 'black', 'black', 'white')) +
     labs(x = expression('Perennial macroalgae Production'~(g~C*~m^-2~GS^-1)), y = expression('Depth'~(m)))+
     scale_x_continuous(limits = c(0,18), breaks = seq(0,18, by = 3), labels = scales::number_format(accuracy = 1), position = 'top') +
-    scale_y_continuous(limits = c(-8,0), breaks = seq(-8,0, by = 2), labels = scales::number_format(accuracy = 1))
+    scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
   WB_S1_PRBC2_vs_lower + theme_pub()
@@ -1636,8 +1636,8 @@ gistoolRF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'black', 'black', 'white')) +
     labs(x = expression('Benthic diatom Production'~(g~C*~m^-2~GS^-1)), y = expression('Depth'~(m)))+
-    scale_x_continuous(limits = c(0,50), breaks = seq(0,50, by = 5), labels = scales::number_format(accuracy = 1), position = 'top') +
-    scale_y_continuous(limits = c(-10,0), breaks = seq(-10,0, by = 2), labels = scales::number_format(accuracy = 1))
+    scale_x_continuous(limits = c(0,210), breaks = seq(0,210, by = 20), labels = scales::number_format(accuracy = 1), position = 'top') +
+    scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
   WB_S1_PRBDC_vs_lower + theme_pub()
@@ -1651,7 +1651,7 @@ gistoolRF_MM <- function() {
     scale_fill_manual(values = c('black', 'black', 'black', 'white')) +
     labs(x = expression('Phytoplankton biomass'~(g~C*~m^-3)), y = expression('Depth'~(m)))+
     scale_x_continuous(limits = c(0,2), breaks = seq(0,2, by = 0.3), labels = scales::number_format(accuracy = 0.1), position = 'top') +
-    scale_y_continuous(limits = c(-16,0), breaks = seq(-16,0, by = 3), labels = scales::number_format(accuracy = 1))
+    scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
   WB_S1_PC_vs_lower + theme_pub()
@@ -1665,7 +1665,7 @@ gistoolRF_MM <- function() {
     scale_fill_manual(values = c('black', 'black', 'black', 'white')) +
     labs(x = expression('Benthic light'~(mu*E*~m^-2*~s^-1)), y = expression('Depth'~(m)))+
     scale_x_continuous(limits = c(0,650), breaks = seq(0,650, by = 100), labels = scales::number_format(accuracy = 1), position = 'top') +
-    scale_y_continuous(limits = c(-16,0), breaks = seq(-16,0, by = 3), labels = scales::number_format(accuracy = 1))
+    scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
   WB_S1_lo_b_vs_lower + theme_pub()
@@ -1696,7 +1696,7 @@ gistoolRF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'black', 'black', 'white')) +
     labs(x = expression('Eelgrass Production'~(g~C*~m^-2~GS^-1)), y = expression('Depth'~(m)))+
-    scale_x_continuous(limits = c(0,120), breaks = seq(0,120, by = 20), labels = scales::number_format(accuracy = 1), position = 'top') +
+    scale_x_continuous(limits = c(0,100), breaks = seq(0,100, by = 20), labels = scales::number_format(accuracy = 1), position = 'top') +
     scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 2), labels = scales::number_format(accuracy = 1))
 
   WB_S2_PREC_vs_lower + theme_pub()
@@ -1709,8 +1709,8 @@ gistoolRF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'black', 'black', 'white')) +
     labs(x = expression('Opp. macroalgae Production'~(g~C*~m^-2~GS^-1)), y = expression('Depth'~(m)))+
-    scale_x_continuous(limits = c(0,45), breaks = seq(0,45, by = 5), labels = scales::number_format(accuracy = 1), position = 'top') +
-    scale_y_continuous(limits = c(-8,0), breaks = seq(-8,0, by = 2), labels = scales::number_format(accuracy = 1))
+    scale_x_continuous(limits = c(0,100), breaks = seq(0,100, by = 10), labels = scales::number_format(accuracy = 1), position = 'top') +
+    scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
   WB_S2_PRBC1_vs_lower + theme_pub()
@@ -1724,7 +1724,7 @@ gistoolRF_MM <- function() {
     scale_fill_manual(values = c('black', 'black', 'black', 'white')) +
     labs(x = expression('Perennial macroalgae Production'~(g~C*~m^-2~GS^-1)), y = expression('Depth'~(m)))+
     scale_x_continuous(limits = c(0,18), breaks = seq(0,18, by = 3), labels = scales::number_format(accuracy = 1), position = 'top') +
-    scale_y_continuous(limits = c(-8,0), breaks = seq(-8,0, by = 2), labels = scales::number_format(accuracy = 1))
+    scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
   WB_S2_PRBC2_vs_lower + theme_pub()
@@ -1737,8 +1737,8 @@ gistoolRF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'black', 'black', 'white')) +
     labs(x = expression('Benthic diatom Production'~(g~C*~m^-2~GS^-1)), y = expression('Depth'~(m)))+
-    scale_x_continuous(limits = c(0,50), breaks = seq(0,50, by = 5), labels = scales::number_format(accuracy = 1), position = 'top') +
-    scale_y_continuous(limits = c(-10,0), breaks = seq(-10,0, by = 2), labels = scales::number_format(accuracy = 1))
+    scale_x_continuous(limits = c(0,210), breaks = seq(0,210, by = 20), labels = scales::number_format(accuracy = 1), position = 'top') +
+    scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
   WB_S2_PRBDC_vs_lower + theme_pub()
@@ -1752,7 +1752,7 @@ gistoolRF_MM <- function() {
     scale_fill_manual(values = c('black', 'black', 'black', 'white')) +
     labs(x = expression('Phytoplankton biomass'~(g~C*~m^-3)), y = expression('Depth'~(m)))+
     scale_x_continuous(limits = c(0,2), breaks = seq(0,2, by = 0.3), labels = scales::number_format(accuracy = 0.1), position = 'top') +
-    scale_y_continuous(limits = c(-16,0), breaks = seq(-16,0, by = 3), labels = scales::number_format(accuracy = 1))
+    scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
   WB_S2_PC_vs_lower + theme_pub()
@@ -1766,7 +1766,7 @@ gistoolRF_MM <- function() {
     scale_fill_manual(values = c('black', 'black', 'black', 'white')) +
     labs(x = expression('Benthic light'~(mu*E*~m^-2*~s^-1)), y = expression('Depth'~(m)))+
     scale_x_continuous(limits = c(0,650), breaks = seq(0,650, by = 100), labels = scales::number_format(accuracy = 1), position = 'top') +
-    scale_y_continuous(limits = c(-16,0), breaks = seq(-16,0, by = 3), labels = scales::number_format(accuracy = 1))
+    scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
   WB_S2_lo_b_vs_lower + theme_pub()
@@ -1872,8 +1872,8 @@ gistoolRF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = expression('                                                                                         Opp. macroalgae production'~(g~C*~m^-2*~GS^-1)), y = '') +
-    scale_x_continuous(limits = c(0,45), breaks = seq(0,45, by = 5), labels = scales::number_format(accuracy = 1), position = 'top') +
-    scale_y_continuous(limits = c(-8,0), breaks = seq(-8,0, by = 2), labels = scales::number_format(accuracy = 1))
+    scale_x_continuous(limits = c(0,100), breaks = seq(0,100, by = 10), labels = scales::number_format(accuracy = 1), position = 'top') +
+    scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 1), labels = scales::number_format(accuracy = 1))
 
 
   WB_AS_G1_PRBC1 + theme_pub()
@@ -1885,8 +1885,8 @@ gistoolRF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
-    scale_x_continuous(limits = c(0,45), breaks = seq(0,45, by = 5), labels = scales::number_format(accuracy = 1), position = 'top') +
-    scale_y_continuous(limits = c(-8,0), breaks = seq(-8,0, by = 2), labels = scales::number_format(accuracy = 1))
+    scale_x_continuous(limits = c(0,100), breaks = seq(0,100, by = 10), labels = scales::number_format(accuracy = 1), position = 'top') +
+    scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 1), labels = scales::number_format(accuracy = 1))
 
 
   WB_AS_G2_PRBC1 + theme_pub()
@@ -1898,8 +1898,8 @@ gistoolRF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = expression('                                                                                           Depth'~(m))) +
-    scale_x_continuous(limits = c(0,45), breaks = seq(0,45, by = 5), labels = scales::number_format(accuracy = 1), position = 'top') +
-    scale_y_continuous(limits = c(-8,0), breaks = seq(-8,0, by = 2), labels = scales::number_format(accuracy = 1))
+    scale_x_continuous(limits = c(0,100), breaks = seq(0,100, by = 10), labels = scales::number_format(accuracy = 1), position = 'top') +
+    scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 1), labels = scales::number_format(accuracy = 1))
 
 
   WB_AS_G3_PRBC1 + theme_pub()
@@ -1911,8 +1911,8 @@ gistoolRF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
-    scale_x_continuous(limits = c(0,45), breaks = seq(0,45, by = 5), labels = scales::number_format(accuracy = 1), position = 'top') +
-    scale_y_continuous(limits = c(-8,0), breaks = seq(-8,0, by = 2), labels = scales::number_format(accuracy = 1))
+    scale_x_continuous(limits = c(0,100), breaks = seq(0,100, by = 10), labels = scales::number_format(accuracy = 1), position = 'top') +
+    scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 1), labels = scales::number_format(accuracy = 1))
 
 
   WB_AS_G4_PRBC1 + theme_pub()
@@ -1942,7 +1942,7 @@ gistoolRF_MM <- function() {
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = expression('                                                                                         Perennial macroalgae production'~(g~C*~m^-2*~GS^-1)), y = '') +
     scale_x_continuous(limits = c(0,18), breaks = seq(0,18, by = 3), labels = scales::number_format(accuracy = 1), position = 'top') +
-    scale_y_continuous(limits = c(-8,0), breaks = seq(-8,0, by = 2), labels = scales::number_format(accuracy = 1))
+    scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 1), labels = scales::number_format(accuracy = 1))
 
 
   WB_AS_G1_PRBC2 + theme_pub()
@@ -1955,7 +1955,7 @@ gistoolRF_MM <- function() {
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
     scale_x_continuous(limits = c(0,18), breaks = seq(0,18, by = 3), labels = scales::number_format(accuracy = 1), position = 'top') +
-    scale_y_continuous(limits = c(-8,0), breaks = seq(-8,0, by = 2), labels = scales::number_format(accuracy = 1))
+    scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 1), labels = scales::number_format(accuracy = 1))
 
 
   WB_AS_G2_PRBC2 + theme_pub()
@@ -1968,7 +1968,7 @@ gistoolRF_MM <- function() {
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = expression('                                                                                           Depth'~(m))) +
     scale_x_continuous(limits = c(0,18), breaks = seq(0,18, by = 3), labels = scales::number_format(accuracy = 1), position = 'top') +
-    scale_y_continuous(limits = c(-8,0), breaks = seq(-8,0, by = 2), labels = scales::number_format(accuracy = 1))
+    scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 1), labels = scales::number_format(accuracy = 1))
 
 
   WB_AS_G3_PRBC2 + theme_pub()
@@ -1981,7 +1981,7 @@ gistoolRF_MM <- function() {
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
     scale_x_continuous(limits = c(0,18), breaks = seq(0,18, by = 3), labels = scales::number_format(accuracy = 1), position = 'top') +
-    scale_y_continuous(limits = c(-8,0), breaks = seq(-8,0, by = 2), labels = scales::number_format(accuracy = 1))
+    scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 1), labels = scales::number_format(accuracy = 1))
 
 
   WB_AS_G4_PRBC2 + theme_pub()
@@ -2010,8 +2010,8 @@ gistoolRF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = expression('                                                                                         Benthic diatom production'~(g~C*~m^-2*~GS^-1)), y = '') +
-    scale_x_continuous(limits = c(0,55), breaks = seq(0,55, by = 5), labels = scales::number_format(accuracy = 1), position = 'top') +
-    scale_y_continuous(limits = c(-10,0), breaks = seq(-10,0, by = 2), labels = scales::number_format(accuracy = 1))
+    scale_x_continuous(limits = c(0,210), breaks = seq(0,210, by = 20), labels = scales::number_format(accuracy = 1), position = 'top') +
+    scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 1), labels = scales::number_format(accuracy = 1))
 
 
   WB_AS_G1_PRBDC + theme_pub()
@@ -2023,8 +2023,8 @@ gistoolRF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
-    scale_x_continuous(limits = c(0,55), breaks = seq(0,55, by = 5), labels = scales::number_format(accuracy = 1), position = 'top') +
-    scale_y_continuous(limits = c(-10,0), breaks = seq(-10,0, by = 2), labels = scales::number_format(accuracy = 1))
+    scale_x_continuous(limits = c(0,210), breaks = seq(0,210, by = 20), labels = scales::number_format(accuracy = 1), position = 'top') +
+    scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 1), labels = scales::number_format(accuracy = 1))
 
 
   WB_AS_G2_PRBDC + theme_pub()
@@ -2036,8 +2036,8 @@ gistoolRF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = expression('                                                                                           Depth'~(m))) +
-    scale_x_continuous(limits = c(0,55), breaks = seq(0,55, by = 5), labels = scales::number_format(accuracy = 1), position = 'top') +
-    scale_y_continuous(limits = c(-10,0), breaks = seq(-10,0, by = 2), labels = scales::number_format(accuracy = 1))
+    scale_x_continuous(limits = c(0,210), breaks = seq(0,210, by = 20), labels = scales::number_format(accuracy = 1), position = 'top') +
+    scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 1), labels = scales::number_format(accuracy = 1))
 
 
   WB_AS_G3_PRBDC + theme_pub()
@@ -2049,8 +2049,8 @@ gistoolRF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
-    scale_x_continuous(limits = c(0,55), breaks = seq(0,55, by = 5), labels = scales::number_format(accuracy = 1), position = 'top') +
-    scale_y_continuous(limits = c(-10,0), breaks = seq(-10,0, by = 2), labels = scales::number_format(accuracy = 1))
+    scale_x_continuous(limits = c(0,210), breaks = seq(0,210, by = 20), labels = scales::number_format(accuracy = 1), position = 'top') +
+    scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 1), labels = scales::number_format(accuracy = 1))
 
 
   WB_AS_G4_PRBDC + theme_pub()
@@ -2080,7 +2080,7 @@ gistoolRF_MM <- function() {
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = expression('                                                                                         Phytoplakton biomass'~(g~C*~m^-3)), y = '') +
     scale_x_continuous(limits = c(0,2), breaks = seq(0,2, by = 0.3), labels = scales::number_format(accuracy = 0.1), position = 'top') +
-    scale_y_continuous(limits = c(-16,0), breaks = seq(-16,0, by = 3), labels = scales::number_format(accuracy = 1))
+    scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 1), labels = scales::number_format(accuracy = 1))
 
 
   WB_AS_G1_PC + theme_pub()
@@ -2093,7 +2093,7 @@ gistoolRF_MM <- function() {
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
     scale_x_continuous(limits = c(0,2), breaks = seq(0,2, by = 0.3), labels = scales::number_format(accuracy = 0.1), position = 'top') +
-    scale_y_continuous(limits = c(-16,0), breaks = seq(-16,0, by = 3), labels = scales::number_format(accuracy = 1))
+    scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 1), labels = scales::number_format(accuracy = 1))
 
 
   WB_AS_G2_PC + theme_pub()
@@ -2106,7 +2106,7 @@ gistoolRF_MM <- function() {
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = expression('                                                                                           Depth'~(m))) +
     scale_x_continuous(limits = c(0,2), breaks = seq(0,2, by = 0.3), labels = scales::number_format(accuracy = 0.1), position = 'top') +
-    scale_y_continuous(limits = c(-16,0), breaks = seq(-16,0, by = 3), labels = scales::number_format(accuracy = 1))
+    scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 1), labels = scales::number_format(accuracy = 1))
 
 
   WB_AS_G3_PC + theme_pub()
@@ -2119,7 +2119,7 @@ gistoolRF_MM <- function() {
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
     scale_x_continuous(limits = c(0,2), breaks = seq(0,2, by = 0.3), labels = scales::number_format(accuracy = 0.1), position = 'top') +
-    scale_y_continuous(limits = c(-16,0), breaks = seq(-16,0, by = 3), labels = scales::number_format(accuracy = 1))
+    scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 1), labels = scales::number_format(accuracy = 1))
 
 
   WB_AS_G4_PC + theme_pub()
@@ -2149,7 +2149,7 @@ gistoolRF_MM <- function() {
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = expression('                                                                                         Benthic light'~(mu*E*~m^-2*~s^-1)), y = '') +
     scale_x_continuous(limits = c(0,700), breaks = seq(0,700, by = 100), labels = scales::number_format(accuracy = 1), position = 'top') +
-    scale_y_continuous(limits = c(-16,0), breaks = seq(-16,0, by = 3), labels = scales::number_format(accuracy = 1))
+    scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 1), labels = scales::number_format(accuracy = 1))
 
 
   WB_AS_G1_lo_b + theme_pub()
@@ -2162,7 +2162,7 @@ gistoolRF_MM <- function() {
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
     scale_x_continuous(limits = c(0,700), breaks = seq(0,700, by = 100), labels = scales::number_format(accuracy = 1), position = 'top') +
-    scale_y_continuous(limits = c(-16,0), breaks = seq(-16,0, by = 3), labels = scales::number_format(accuracy = 1))
+    scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 1), labels = scales::number_format(accuracy = 1))
 
 
   WB_AS_G2_lo_b + theme_pub()
@@ -2175,7 +2175,7 @@ gistoolRF_MM <- function() {
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = expression('                                                                                           Depth'~(m))) +
     scale_x_continuous(limits = c(0,700), breaks = seq(0,700, by = 100), labels = scales::number_format(accuracy = 1), position = 'top') +
-    scale_y_continuous(limits = c(-16,0), breaks = seq(-16,0, by = 3), labels = scales::number_format(accuracy = 1))
+    scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 1), labels = scales::number_format(accuracy = 1))
 
 
   WB_AS_G3_lo_b + theme_pub()
@@ -2188,7 +2188,7 @@ gistoolRF_MM <- function() {
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
     scale_x_continuous(limits = c(0,700), breaks = seq(0,700, by = 100), labels = scales::number_format(accuracy = 1), position = 'top') +
-    scale_y_continuous(limits = c(-16,0), breaks = seq(-16,0, by = 3), labels = scales::number_format(accuracy = 1))
+    scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 1), labels = scales::number_format(accuracy = 1))
 
 
   WB_AS_G4_lo_b + theme_pub()
@@ -2321,8 +2321,8 @@ gistoolRF_MM <- function() {
     scale_shape_manual(values = c(21, 24, 22, 22, 24)) +
     scale_color_manual(values = c('black', 'orange', 'black')) +
     scale_fill_manual(values = c('black', 'black', 'black', 'white', 'white')) +
-    scale_x_continuous(limits = c(0,0.65), breaks = seq(0,0.65, by = 0.1), labels = scales::number_format(accuracy = 0.1), position = 'top') +
-    scale_y_continuous(limits = c(-16,0), breaks = seq(-16,0, by = 2), labels = scales::number_format(accuracy = 1)) +
+    scale_x_continuous(limits = c(0,1), breaks = seq(0,1, by = 0.1), labels = scales::number_format(accuracy = 0.1), position = 'top') +
+    scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 1), labels = scales::number_format(accuracy = 1)) +
     labs(x = 'Eelgrass growth limitation by benthic light\n', y = 'Depth (m)')
 
   WB_monod_EC_light + theme_pub() +
@@ -2355,8 +2355,8 @@ gistoolRF_MM <- function() {
     scale_shape_manual(values = c(21, 24, 22, 22, 24)) +
     scale_color_manual(values = c('black', 'orange', 'black')) +
     scale_fill_manual(values = c('black', 'black', 'black', 'white', 'white')) +
-    scale_x_continuous(limits = c(0,1.1), breaks = seq(0,1.1, by = 0.2), labels = scales::number_format(accuracy = 0.1), position = 'top') +
-    scale_y_continuous(limits = c(-16,0), breaks = seq(-16,0, by = 2), labels = scales::number_format(accuracy = 1)) +
+    scale_x_continuous(limits = c(0,1), breaks = seq(0,1, by = 0.1), labels = scales::number_format(accuracy = 0.1), position = 'top') +
+    scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 1), labels = scales::number_format(accuracy = 1)) +
     labs(x = 'Opp. macroalgae growth inhibition by DIN\n', y = '')
 
   WB_monod_BC1_DIN + theme_pub() +
@@ -2373,8 +2373,8 @@ gistoolRF_MM <- function() {
     scale_shape_manual(values = c(21, 24, 22, 22, 24)) +
     scale_color_manual(values = c('black', 'orange', 'black')) +
     scale_fill_manual(values = c('black', 'black', 'black', 'white', 'white')) +
-    scale_x_continuous(limits = c(0.50,1.09), breaks = seq(0.50,1.09, by = 0.1), labels = scales::number_format(accuracy = 0.1), position = 'top') +
-    scale_y_continuous(limits = c(-16,0), breaks = seq(-16,0, by = 2), labels = scales::number_format(accuracy = 1)) +
+    scale_x_continuous(limits = c(0,1), breaks = seq(0,1, by = 0.1), labels = scales::number_format(accuracy = 0.1), position = 'top') +
+    scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 1), labels = scales::number_format(accuracy = 1)) +
     labs(x = 'Opp. macroalgae growth inhibition by DIP\n', y = 'Depth (m)')
 
   WB_monod_BC1_DIP + theme_pub() +
@@ -2391,8 +2391,8 @@ gistoolRF_MM <- function() {
     scale_shape_manual(values = c(21, 24, 22, 22, 24)) +
     scale_color_manual(values = c('black', 'orange', 'black')) +
     scale_fill_manual(values = c('black', 'black', 'black', 'white', 'white')) +
-    scale_x_continuous(limits = c(0,0.8), breaks = seq(0,0.8, by = 0.1), labels = scales::number_format(accuracy = 0.1), position = 'top') +
-    scale_y_continuous(limits = c(-16,0), breaks = seq(-16,0, by = 2), labels = scales::number_format(accuracy = 1)) +
+    scale_x_continuous(limits = c(0,1), breaks = seq(0,1, by = 0.1), labels = scales::number_format(accuracy = 0.1), position = 'top') +
+    scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 1), labels = scales::number_format(accuracy = 1)) +
     labs(x = 'Opp. macroalgae growth inhibition by benthic light\n', y = '')
 
   WB_monod_BC1_light + theme_pub() +
@@ -2406,7 +2406,7 @@ gistoolRF_MM <- function() {
   WB_monod_BC1_DIN + theme_pub() + theme(plot.margin = unit(c(15,1,1,1), "pt"), axis.title = element_text(size = 18), legend.justification = c(1,1.75),
                                          legend.direction = 'vertical',
                                          legend.box = 'vertical') +
-    WB_monod_BC1_DIP + theme_pub() + theme(plot.margin = unit(c(15,1,1,1), "pt"), axis.title = element_text(size = 18), legend.justification = c(1,1.75),
+    WB_monod_BC1_DIP + theme_pub() + theme(plot.margin = unit(c(15,1,1,1), "pt"), axis.title = element_text(size = 18), legend.justification = c(5.5,1.75),
                                            legend.direction = 'vertical',
                                            legend.box = 'vertical') +
     WB_monod_BC1_light + theme_pub() + theme(plot.margin = unit(c(15,1,1,1), "pt"), axis.title = element_text(size = 18), legend.justification = c(1,1.75),
@@ -2429,8 +2429,8 @@ gistoolRF_MM <- function() {
     scale_shape_manual(values = c(21, 24, 22, 22, 24)) +
     scale_color_manual(values = c('black', 'orange', 'black')) +
     scale_fill_manual(values = c('black', 'black', 'black', 'white', 'white')) +
-    scale_x_continuous(limits = c(0,1.1), breaks = seq(0,1.1, by = 0.2), labels = scales::number_format(accuracy = 0.1), position = 'top') +
-    scale_y_continuous(limits = c(-16,0), breaks = seq(-16,0, by = 2), labels = scales::number_format(accuracy = 1)) +
+    scale_x_continuous(limits = c(0,1), breaks = seq(0,1, by = 0.1), labels = scales::number_format(accuracy = 0.1), position = 'top') +
+    scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 1), labels = scales::number_format(accuracy = 1)) +
     labs(x = 'Phytoplankton growth inhibition by DIN\n', y = '')
 
   WB_monod_PC_DIN + theme_pub() +
@@ -2447,8 +2447,8 @@ gistoolRF_MM <- function() {
     scale_shape_manual(values = c(21, 24, 22, 22, 24)) +
     scale_color_manual(values = c('black', 'orange', 'black')) +
     scale_fill_manual(values = c('black', 'black', 'black', 'white', 'white')) +
-    scale_x_continuous(limits = c(0.75,1), breaks = seq(0.75,1, by = 0.05), labels = scales::number_format(accuracy = 0.01), position = 'top') +
-    scale_y_continuous(limits = c(-16,0), breaks = seq(-16,0, by = 2), labels = scales::number_format(accuracy = 1)) +
+    scale_x_continuous(limits = c(0,1), breaks = seq(0,1, by = 0.1), labels = scales::number_format(accuracy = 0.1), position = 'top') +
+    scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 1), labels = scales::number_format(accuracy = 1)) +
     labs(x = 'Phytoplankton growth inhibition by DIP\n', y = 'Depth (m)')
 
   WB_monod_PC_DIP + theme_pub() +
@@ -2465,8 +2465,8 @@ gistoolRF_MM <- function() {
     scale_shape_manual(values = c(21, 24, 22, 22, 24)) +
     scale_color_manual(values = c('black', 'orange', 'black')) +
     scale_fill_manual(values = c('black', 'black', 'black', 'white', 'white')) +
-    scale_x_continuous(limits = c(0,0.9), breaks = seq(0,0.9, by = 0.1), labels = scales::number_format(accuracy = 0.1), position = 'top') +
-    scale_y_continuous(limits = c(-16,0), breaks = seq(-16,0, by = 2), labels = scales::number_format(accuracy = 1)) +
+    scale_x_continuous(limits = c(0,1), breaks = seq(0,1, by = 0.1), labels = scales::number_format(accuracy = 0.1), position = 'top') +
+    scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 1), labels = scales::number_format(accuracy = 1)) +
     labs(x = 'Phytoplankton growth inhibition by benthic light\n', y = '')
 
   WB_monod_PC_light + theme_pub() +
@@ -2477,13 +2477,13 @@ gistoolRF_MM <- function() {
       legend.box = 'vertical'
     )
 
-  WB_monod_PC_DIN + theme_pub() + theme(plot.margin = unit(c(15,1,1,1), "pt"), axis.title = element_text(size = 18), legend.justification = c(1,1.75),
+  WB_monod_PC_DIN + theme_pub() + theme(plot.margin = unit(c(15,1,1,1), "pt"), axis.title = element_text(size = 18), legend.justification = c(5.5,1.75),
                                         legend.direction = 'vertical',
                                         legend.box = 'vertical') +
     WB_monod_PC_DIP + theme_pub() + theme(plot.margin = unit(c(15,1,1,1), "pt"), axis.title = element_text(size = 18), legend.justification = c(5.5,1.75),
                                           legend.direction = 'vertical',
                                           legend.box = 'vertical') +
-    WB_monod_PC_light + theme_pub() + theme(plot.margin = unit(c(15,1,1,1), "pt"), axis.title = element_text(size = 18), legend.justification = c(1,1.75),
+    WB_monod_PC_light + theme_pub() + theme(plot.margin = unit(c(15,1,1,1), "pt"), axis.title = element_text(size = 18), legend.justification = c(5.5,1.75),
                                             legend.direction = 'vertical',
                                             legend.box = 'vertical') +
     plot_layout(ncol = 1) +
@@ -2503,8 +2503,8 @@ gistoolRF_MM <- function() {
     scale_shape_manual(values = c(21, 24, 22, 22, 24)) +
     scale_color_manual(values = c('black', 'orange', 'black')) +
     scale_fill_manual(values = c('black', 'black', 'black', 'white', 'white')) +
-    scale_x_continuous(limits = c(0.15,1), breaks = seq(0.15,1, by = 0.1), labels = scales::number_format(accuracy = 0.1), position = 'top') +
-    scale_y_continuous(limits = c(-16,0), breaks = seq(-16,0, by = 2), labels = scales::number_format(accuracy = 1)) +
+    scale_x_continuous(limits = c(0,1), breaks = seq(0,1, by = 0.1), labels = scales::number_format(accuracy = 0.1), position = 'top') +
+    scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 1), labels = scales::number_format(accuracy = 1)) +
     labs(x = 'Perennial macroalgae growth inhibition by DIN\n', y = '')
 
   WB_monod_BC2_DIN + theme_pub() +
@@ -2521,8 +2521,8 @@ gistoolRF_MM <- function() {
     scale_shape_manual(values = c(21, 24, 22, 22, 24)) +
     scale_color_manual(values = c('black', 'orange', 'black')) +
     scale_fill_manual(values = c('black', 'black', 'black', 'white', 'white')) +
-    scale_x_continuous(limits = c(0.5,1), breaks = seq(0.5,1, by = 0.1), labels = scales::number_format(accuracy = 0.1), position = 'top') +
-    scale_y_continuous(limits = c(-16,0), breaks = seq(-16,0, by = 2), labels = scales::number_format(accuracy = 1)) +
+    scale_x_continuous(limits = c(0,1), breaks = seq(0,1, by = 0.1), labels = scales::number_format(accuracy = 0.1), position = 'top') +
+    scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 1), labels = scales::number_format(accuracy = 1)) +
     labs(x = 'Perennial macroalgae growth inhibition by DIP\n', y = 'Depth (m)')
 
   WB_monod_BC2_DIP + theme_pub() +
@@ -2539,8 +2539,8 @@ gistoolRF_MM <- function() {
     scale_shape_manual(values = c(21, 24, 22, 22, 24)) +
     scale_color_manual(values = c('black', 'orange', 'black')) +
     scale_fill_manual(values = c('black', 'black', 'black', 'white', 'white')) +
-    scale_x_continuous(limits = c(0,0.8), breaks = seq(0,0.8, by = 0.1), labels = scales::number_format(accuracy = 0.1), position = 'top') +
-    scale_y_continuous(limits = c(-16,0), breaks = seq(-16,0, by = 2), labels = scales::number_format(accuracy = 1)) +
+    scale_x_continuous(limits = c(0,1), breaks = seq(0,1, by = 0.1), labels = scales::number_format(accuracy = 0.1), position = 'top') +
+    scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 1), labels = scales::number_format(accuracy = 1)) +
     labs(x = 'Perennial macroalgae growth inhibition by benthic light\n', y = '')
 
   WB_monod_BC2_light + theme_pub() +
