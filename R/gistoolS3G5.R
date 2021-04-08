@@ -1649,7 +1649,7 @@ gistoolS3G5 <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     xlim(0,0.25) +
-    xlab('Avg. DIN ('*'g N'~m^-2*')') +
+    xlab('Avg. DIN ('*'g N'~m^-3*')') +
     ylab('Eelgrass production ('*' g C'~m^-2~GS^-1*')') +
     scale_y_continuous(breaks = round(seq(min(WB_B$PREC), max(WB_B$PREC+1), by = 0.5),1))
 
@@ -1664,7 +1664,7 @@ gistoolS3G5 <- function() {
     scale_fill_manual(values = c('black', 'white', 'black')) +
     xlim(0,0.25) +
     ylim(0,40) +
-    xlab('Avg. DIN ('*'g N'~m^-2*')') +
+    xlab('Avg. DIN ('*'g N'~m^-3*')') +
     ylab('Opp. macroalgae production ('*' g C'~m^-2~GS^-1*')')
 
   WB_panel_PRBC1_vs_AvgDIN <<- WB_PRBC1_vs_AvgDIN + theme_pub()
@@ -1679,7 +1679,7 @@ gistoolS3G5 <- function() {
     scale_fill_manual(values = c('black', 'white', 'black')) +
     xlim(0,0.25) +
     ylim(100,300) +
-    xlab('Avg. DIN ('*'g N'~m^-2*')') +
+    xlab('Avg. DIN ('*'g N'~m^-3*')') +
     ylab('Phytoplankton production ('*'  g C'~m^-2~GS^-1*')')
 
   WB_panel_PRPC_vs_AvgDIN <<- WB_PRPC_vs_AvgDIN + theme_pub()

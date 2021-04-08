@@ -1408,7 +1408,7 @@ gistoolRF <- function() {
     scale_shape_manual(values = c(22, 22, 24)) +
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
-    xlab('Avg. DIN ('*'g N'~m^-2*')') +
+    xlab('Avg. DIN ('*'g N'~m^-3*')') +
     ylab('Eelgrass production ('*' g C'~m^-2~GS^-1*')') +
     scale_x_continuous(limits = c(0,0.45), breaks = seq(0,0.45, by = 0.1), labels = scales::number_format(accuracy = 0.05)) +
     scale_y_continuous(limits = c(0,25), breaks = seq(0,25, by = 5), labels = scales::number_format(accuracy = 1))
@@ -1423,7 +1423,7 @@ gistoolRF <- function() {
     scale_shape_manual(values = c(22, 22, 24)) +
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
-    xlab('Avg. DIN ('*'g N'~m^-2*')') +
+    xlab('Avg. DIN ('*'g N'~m^-3*')') +
     ylab('Opp. macroalgae production ('*' g C'~m^-2~GS^-1*')') +
     scale_x_continuous(limits = c(0,0.45), breaks = seq(0,0.45, by = 0.1), labels = scales::number_format(accuracy = 0.05)) +
     scale_y_continuous(limits = c(0,35), breaks = seq(0,35, by = 5), labels = scales::number_format(accuracy = 1))
@@ -1438,7 +1438,7 @@ gistoolRF <- function() {
     scale_shape_manual(values = c(22, 22, 24)) +
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
-    xlab('Avg. DIN ('*'g N'~m^-2*')') +
+    xlab('Avg. DIN ('*'g N'~m^-3*')') +
     ylab('Phytoplankton production ('*'  g C'~m^-2~GS^-1*')') +
     scale_x_continuous(limits = c(0,0.45), breaks = seq(0,0.45, by = 0.1), labels = scales::number_format(accuracy = 0.05)) +
     scale_y_continuous(limits = c(0,70), breaks = seq(0,70, by = 10), labels = scales::number_format(accuracy = 1))
