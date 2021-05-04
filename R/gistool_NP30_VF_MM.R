@@ -1503,10 +1503,10 @@ gistool_NP30_VF_MM <- function() {
     add_column(scenario = "Baseline", .before = "WB_gradient_no")
 
   WB_S1_AG_ASSV <<- data.frame(WB_gradient_no,WB_S1_avgDIN_AG,WB_S1_avgDIP_AG,WB_S1_avgDIN_b_AG,WB_S1_avgDIP_b_AG,WB_S1_EC_AG,WB_S1_EN_AG,WB_S1_EP_AG,WB_S1_BC2_AG,WB_S1_BN2_AG,WB_S1_BP2_AG,WB_S1_BC1_AG,WB_S1_BN1_AG,WB_S1_BP1_AG,WB_S1_BDC_AG,WB_S1_BDN_AG,WB_S1_BDP_AG,WB_S1_PC_AG,WB_S1_PN_AG,WB_S1_PP_AG,WB_S1_CH_AG,WB_S1_DIN_AG,WB_S1_DIP_AG,WB_S1_PREC_AG,WB_S1_PRBC2_AG,WB_S1_PRBC1_AG,WB_S1_PRBDC_AG,WB_S1_PRPC_AG,WB_S1_DIN_b_AG,WB_S1_DIP_b_AG,WB_S1_lo_b_AG) %>%
-    add_column(scenario = "NP30_B", .before = "WB_gradient_no")
+    add_column(scenario = "N-30%", .before = "WB_gradient_no")
 
   WB_S2_AG_ASSV <<- data.frame(WB_gradient_no,WB_S2_avgDIN_AG,WB_S2_avgDIP_AG,WB_S2_avgDIN_b_AG,WB_S2_avgDIP_b_AG,WB_S2_EC_AG,WB_S2_EN_AG,WB_S2_EP_AG,WB_S2_BC2_AG,WB_S2_BN2_AG,WB_S2_BP2_AG,WB_S2_BC1_AG,WB_S2_BN1_AG,WB_S2_BP1_AG,WB_S2_BDC_AG,WB_S2_BDN_AG,WB_S2_BDP_AG,WB_S2_PC_AG,WB_S2_PN_AG,WB_S2_PP_AG,WB_S2_CH_AG,WB_S2_DIN_AG,WB_S2_DIP_AG,WB_S2_PREC_AG,WB_S2_PRBC2_AG,WB_S2_PRBC1_AG,WB_S2_PRBDC_AG,WB_S2_PRPC_AG,WB_S2_DIN_b_AG,WB_S2_DIP_b_AG,WB_S2_lo_b_AG) %>%
-    add_column(scenario = "P-30%", .before = "WB_gradient_no")
+    add_column(scenario = "NP-30%", .before = "WB_gradient_no")
 
   #Rename all column headers to enable merging of tables
   WB_B <<- WB_B_AG_ASSV %>%
@@ -1724,20 +1724,20 @@ gistool_NP30_VF_MM <- function() {
   WB_B_AG <<- bind_rows(WB_B_G1, WB_B_G2, WB_B_G3, WB_B_G4, WB_B_G5)
 
 
-  WB_S1_G1 <<- add_column(WB_S1_G1, scenario = 'NP30_B', WB_gradient_no = 'no. 1', .before = 'upper')
-  WB_S1_G2 <<- add_column(WB_S1_G2, scenario = 'NP30_B', WB_gradient_no = 'no. 2', .before = 'upper')
-  WB_S1_G3 <<- add_column(WB_S1_G3, scenario = 'NP30_B', WB_gradient_no = 'no. 3', .before = 'upper')
-  WB_S1_G4 <<- add_column(WB_S1_G4, scenario = 'NP30_B', WB_gradient_no = 'no. 4', .before = 'upper')
-  WB_S1_G5 <<- add_column(WB_S1_G5, scenario = 'NP30_B', WB_gradient_no = 'no. 5', .before = 'upper')
+  WB_S1_G1 <<- add_column(WB_S1_G1, scenario = 'N-30%', WB_gradient_no = 'no. 1', .before = 'upper')
+  WB_S1_G2 <<- add_column(WB_S1_G2, scenario = 'N-30%', WB_gradient_no = 'no. 2', .before = 'upper')
+  WB_S1_G3 <<- add_column(WB_S1_G3, scenario = 'N-30%', WB_gradient_no = 'no. 3', .before = 'upper')
+  WB_S1_G4 <<- add_column(WB_S1_G4, scenario = 'N-30%', WB_gradient_no = 'no. 4', .before = 'upper')
+  WB_S1_G5 <<- add_column(WB_S1_G5, scenario = 'N-30%', WB_gradient_no = 'no. 5', .before = 'upper')
 
   WB_S1_AG <<- bind_rows(WB_S1_G1, WB_S1_G2, WB_S1_G3, WB_S1_G4, WB_S1_G5)
 
 
-  WB_S2_G1 <<- add_column(WB_S2_G1, scenario = 'P-30%', WB_gradient_no = 'no. 1', .before = 'upper')
-  WB_S2_G2 <<- add_column(WB_S2_G2, scenario = 'P-30%', WB_gradient_no = 'no. 2', .before = 'upper')
-  WB_S2_G3 <<- add_column(WB_S2_G3, scenario = 'P-30%', WB_gradient_no = 'no. 3', .before = 'upper')
-  WB_S2_G4 <<- add_column(WB_S2_G4, scenario = 'P-30%', WB_gradient_no = 'no. 4', .before = 'upper')
-  WB_S2_G5 <<- add_column(WB_S2_G5, scenario = 'P-30%', WB_gradient_no = 'no. 5', .before = 'upper')
+  WB_S2_G1 <<- add_column(WB_S2_G1, scenario = 'NP-30%', WB_gradient_no = 'no. 1', .before = 'upper')
+  WB_S2_G2 <<- add_column(WB_S2_G2, scenario = 'NP-30%', WB_gradient_no = 'no. 2', .before = 'upper')
+  WB_S2_G3 <<- add_column(WB_S2_G3, scenario = 'NP-30%', WB_gradient_no = 'no. 3', .before = 'upper')
+  WB_S2_G4 <<- add_column(WB_S2_G4, scenario = 'NP-30%', WB_gradient_no = 'no. 4', .before = 'upper')
+  WB_S2_G5 <<- add_column(WB_S2_G5, scenario = 'NP-30%', WB_gradient_no = 'no. 5', .before = 'upper')
 
   WB_S2_AG <<- bind_rows(WB_S2_G1, WB_S2_G2, WB_S2_G3, WB_S2_G4, WB_S2_G5)
 
@@ -2651,7 +2651,7 @@ gistool_NP30_VF_MM <- function() {
 
 
   #Monod EC
-  WB_monod_EC_light <<- ggplot(subset(WB_monod_table, scenario %in% c('Baseline', 'NP30_B')), aes(x = EC_kmlight, y = lower, group = interaction(scenario, WB_gradient_no))) +
+  WB_monod_EC_light <<- ggplot(subset(WB_monod_table, scenario %in% c('Baseline', 'NP-30%')), aes(x = EC_kmlight, y = lower, group = interaction(scenario, WB_gradient_no))) +
     geom_path(size = 1.5, aes(color = scenario)) +
     geom_point(size = 3, aes(shape = WB_gradient_no, fill = WB_gradient_no)) +
     scale_shape_manual(values = c(21, 24, 22, 22, 24)) +
@@ -2685,7 +2685,7 @@ gistool_NP30_VF_MM <- function() {
            dpi=300)
 
   #Monod BC1
-  WB_monod_BC1_DIN <<- ggplot(subset(WB_monod_table, scenario %in% c('Baseline', 'NP30_B')), aes(x = BC1_kmDIN, y = lower, group = interaction(scenario, WB_gradient_no))) +
+  WB_monod_BC1_DIN <<- ggplot(subset(WB_monod_table, scenario %in% c('Baseline', 'NP-30%')), aes(x = BC1_kmDIN, y = lower, group = interaction(scenario, WB_gradient_no))) +
     geom_path(size = 1.2, aes(color = scenario)) +
     geom_point(size = 2, aes(shape = WB_gradient_no, fill = WB_gradient_no)) +
     scale_shape_manual(values = c(21, 24, 22, 22, 24)) +
@@ -2703,7 +2703,7 @@ gistool_NP30_VF_MM <- function() {
       legend.box = 'vertical',
     )
 
-  WB_monod_BC1_DIP <<- ggplot(subset(WB_monod_table, scenario %in% c('Baseline', 'NP30_B')), aes(x = BC1_kmDIP, y = lower, group = interaction(scenario, WB_gradient_no))) +
+  WB_monod_BC1_DIP <<- ggplot(subset(WB_monod_table, scenario %in% c('Baseline', 'NP-30%')), aes(x = BC1_kmDIP, y = lower, group = interaction(scenario, WB_gradient_no))) +
     geom_path(size = 1.2, aes(color = scenario)) +
     geom_point(size = 2, aes(shape = WB_gradient_no, fill = WB_gradient_no)) +
     scale_shape_manual(values = c(21, 24, 22, 22, 24)) +
@@ -2721,7 +2721,7 @@ gistool_NP30_VF_MM <- function() {
       legend.box = 'vertical'
     )
 
-  WB_monod_BC1_light <<- ggplot(subset(WB_monod_table, scenario %in% c('Baseline', 'NP30_B')), aes(x = BC1_kmlight, y = lower, group = interaction(scenario, WB_gradient_no))) +
+  WB_monod_BC1_light <<- ggplot(subset(WB_monod_table, scenario %in% c('Baseline', 'NP-30%')), aes(x = BC1_kmlight, y = lower, group = interaction(scenario, WB_gradient_no))) +
     geom_path(size = 1.2, aes(color = scenario)) +
     geom_point(size = 2, aes(shape = WB_gradient_no, fill = WB_gradient_no)) +
     scale_shape_manual(values = c(21, 24, 22, 22, 24)) +
@@ -2759,7 +2759,7 @@ gistool_NP30_VF_MM <- function() {
 
 
   #Monod PC
-  WB_monod_PC_DIN <<- ggplot(subset(WB_monod_table, scenario %in% c('Baseline', 'NP30_B')), aes(x = PC_kmDIN, y = lower, group = interaction(scenario, WB_gradient_no))) +
+  WB_monod_PC_DIN <<- ggplot(subset(WB_monod_table, scenario %in% c('Baseline', 'NP-30%')), aes(x = PC_kmDIN, y = lower, group = interaction(scenario, WB_gradient_no))) +
     geom_path(size = 1.2, aes(color = scenario)) +
     geom_point(size = 2, aes(shape = WB_gradient_no, fill = WB_gradient_no)) +
     scale_shape_manual(values = c(21, 24, 22, 22, 24)) +
@@ -2777,7 +2777,7 @@ gistool_NP30_VF_MM <- function() {
       legend.box = 'vertical',
     )
 
-  WB_monod_PC_DIP <<- ggplot(subset(WB_monod_table, scenario %in% c('Baseline', 'NP30_B')), aes(x = PC_kmDIP, y = lower, group = interaction(scenario, WB_gradient_no))) +
+  WB_monod_PC_DIP <<- ggplot(subset(WB_monod_table, scenario %in% c('Baseline', 'NP-30%')), aes(x = PC_kmDIP, y = lower, group = interaction(scenario, WB_gradient_no))) +
     geom_path(size = 1.2, aes(color = scenario)) +
     geom_point(size = 2, aes(shape = WB_gradient_no, fill = WB_gradient_no)) +
     scale_shape_manual(values = c(21, 24, 22, 22, 24)) +
@@ -2795,7 +2795,7 @@ gistool_NP30_VF_MM <- function() {
       legend.box = 'vertical'
     )
 
-  WB_monod_PC_light <<- ggplot(subset(WB_monod_table, scenario %in% c('Baseline', 'NP30_B')), aes(x = PC_kmlight, y = lower, group = interaction(scenario, WB_gradient_no))) +
+  WB_monod_PC_light <<- ggplot(subset(WB_monod_table, scenario %in% c('Baseline', 'NP-30%')), aes(x = PC_kmlight, y = lower, group = interaction(scenario, WB_gradient_no))) +
     geom_path(size = 1.2, aes(color = scenario)) +
     geom_point(size = 2, aes(shape = WB_gradient_no, fill = WB_gradient_no)) +
     scale_shape_manual(values = c(21, 24, 22, 22, 24)) +
@@ -2833,7 +2833,7 @@ gistool_NP30_VF_MM <- function() {
 
 
   #Monod BC2
-  WB_monod_BC2_DIN <<- ggplot(subset(WB_monod_table, scenario %in% c('Baseline', 'NP30_B')), aes(x = BC2_kmDIN, y = lower, group = interaction(scenario, WB_gradient_no))) +
+  WB_monod_BC2_DIN <<- ggplot(subset(WB_monod_table, scenario %in% c('Baseline', 'NP-30%')), aes(x = BC2_kmDIN, y = lower, group = interaction(scenario, WB_gradient_no))) +
     geom_path(size = 1.2, aes(color = scenario)) +
     geom_point(size = 2, aes(shape = WB_gradient_no, fill = WB_gradient_no)) +
     scale_shape_manual(values = c(21, 24, 22, 22, 24)) +
@@ -2851,7 +2851,7 @@ gistool_NP30_VF_MM <- function() {
       legend.box = 'vertical',
     )
 
-  WB_monod_BC2_DIP <<- ggplot(subset(WB_monod_table, scenario %in% c('Baseline', 'NP30_B')), aes(x = BC2_kmDIP, y = lower, group = interaction(scenario, WB_gradient_no))) +
+  WB_monod_BC2_DIP <<- ggplot(subset(WB_monod_table, scenario %in% c('Baseline', 'NP-30%')), aes(x = BC2_kmDIP, y = lower, group = interaction(scenario, WB_gradient_no))) +
     geom_path(size = 1.2, aes(color = scenario)) +
     geom_point(size = 2, aes(shape = WB_gradient_no, fill = WB_gradient_no)) +
     scale_shape_manual(values = c(21, 24, 22, 22, 24)) +
@@ -2869,7 +2869,7 @@ gistool_NP30_VF_MM <- function() {
       legend.box = 'vertical'
     )
 
-  WB_monod_BC2_light <<- ggplot(subset(WB_monod_table, scenario %in% c('Baseline', 'NP30_B')), aes(x = BC2_kmlight, y = lower, group = interaction(scenario, WB_gradient_no))) +
+  WB_monod_BC2_light <<- ggplot(subset(WB_monod_table, scenario %in% c('Baseline', 'NP-30%')), aes(x = BC2_kmlight, y = lower, group = interaction(scenario, WB_gradient_no))) +
     geom_path(size = 1.2, aes(color = scenario)) +
     geom_point(size = 2, aes(shape = WB_gradient_no, fill = WB_gradient_no)) +
     scale_shape_manual(values = c(21, 24, 22, 22, 24)) +
