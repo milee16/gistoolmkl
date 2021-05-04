@@ -4,7 +4,7 @@
 #' @param WBData Tables of gradient polygons
 #' @return Vertical profiles and Monod growth kinetics in various plots
 #' @export
-gistool_NP30_VF_MM <- function() {
+gistool_NP30_VF <- function() {
   if(!require(ggplot2)) install.packages("ggplot2")
   if(!require(extrafont)) install.packages("extrafont")
   library(ggplot2)
