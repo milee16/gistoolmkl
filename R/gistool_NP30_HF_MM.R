@@ -2015,7 +2015,7 @@ gistool_NP30_HF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black', 'black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'black', 'black', 'white', 'white', 'white')) +
     labs(x = expression('Opp. macroalgae Production'~(g~C*~m^-2~GS^-1)), y = expression('Depth'~(m)))+
-    scale_x_continuous(limits = c(0,50), breaks = seq(0,50, by = 10), labels = scales::number_format(accuracy = 1), position = 'top') +
+    scale_x_continuous(limits = c(0,60), breaks = seq(0,60, by = 10), labels = scales::number_format(accuracy = 1), position = 'top') +
     scale_y_continuous(limits = c(-10,0), breaks = seq(-10,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
@@ -2029,7 +2029,7 @@ gistool_NP30_HF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black', 'black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'black', 'black', 'white', 'white', 'white')) +
     labs(x = expression('Perennial macroalgae Production'~(g~C*~m^-2~GS^-1)), y = expression('Depth'~(m)))+
-    scale_x_continuous(limits = c(0,20), breaks = seq(0,20, by = 2), labels = scales::number_format(accuracy = 1), position = 'top') +
+    scale_x_continuous(limits = c(0,30), breaks = seq(0,30, by = 5), labels = scales::number_format(accuracy = 1), position = 'top') +
     scale_y_continuous(limits = c(-10,0), breaks = seq(-10,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
@@ -2131,7 +2131,7 @@ gistool_NP30_HF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black', 'black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'black', 'black', 'white', 'white', 'white')) +
     labs(x = expression('Perennial macroalgae Production'~(g~C*~m^-2~GS^-1)), y = expression('Depth'~(m)))+
-    scale_x_continuous(limits = c(0,20), breaks = seq(0,20, by = 2), labels = scales::number_format(accuracy = 1), position = 'top') +
+    scale_x_continuous(limits = c(0,30), breaks = seq(0,30, by = 5), labels = scales::number_format(accuracy = 1), position = 'top') +
     scale_y_continuous(limits = c(-10,0), breaks = seq(-10,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
@@ -2219,7 +2219,7 @@ gistool_NP30_HF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black', 'black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'black', 'black', 'white', 'white', 'white')) +
     labs(x = expression('Opp. macroalgae Production'~(g~C*~m^-2~GS^-1)), y = expression('Depth'~(m)))+
-    scale_x_continuous(limits = c(0,50), breaks = seq(0,50, by = 10), labels = scales::number_format(accuracy = 1), position = 'top') +
+    scale_x_continuous(limits = c(0,60), breaks = seq(0,60, by = 10), labels = scales::number_format(accuracy = 1), position = 'top') +
     scale_y_continuous(limits = c(-10,0), breaks = seq(-10,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
@@ -2233,7 +2233,7 @@ gistool_NP30_HF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black', 'black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'black', 'black', 'white', 'white', 'white')) +
     labs(x = expression('Perennial macroalgae Production'~(g~C*~m^-2~GS^-1)), y = expression('Depth'~(m)))+
-    scale_x_continuous(limits = c(0,20), breaks = seq(0,20, by = 2), labels = scales::number_format(accuracy = 1), position = 'top') +
+    scale_x_continuous(limits = c(0,30), breaks = seq(0,30, by = 5), labels = scales::number_format(accuracy = 1), position = 'top') +
     scale_y_continuous(limits = c(-10,0), breaks = seq(-10,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
@@ -2495,7 +2495,7 @@ gistool_NP30_HF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = expression('                                                                                         Perennial macroalgae production'~(g~C*~m^-2*~GS^-1)), y = '') +
-    scale_x_continuous(limits = c(0,20), breaks = seq(0,20, by = 2), labels = scales::number_format(accuracy = 1), position = 'top') +
+    scale_x_continuous(limits = c(0,30), breaks = seq(0,30, by = 5), labels = scales::number_format(accuracy = 1), position = 'top') +
     scale_y_continuous(limits = c(-10,0), breaks = seq(-10,0, by = 2), labels = scales::number_format(accuracy = 1))
 
   WB_AS_G1_PRBC2 + theme_pub()
@@ -2507,7 +2507,7 @@ gistool_NP30_HF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
-    scale_x_continuous(limits = c(0,20), breaks = seq(0,20, by = 2), labels = scales::number_format(accuracy = 1), position = 'top') +
+    scale_x_continuous(limits = c(0,30), breaks = seq(0,30, by = 5), labels = scales::number_format(accuracy = 1), position = 'top') +
     scale_y_continuous(limits = c(-10,0), breaks = seq(-10,0, by = 2), labels = scales::number_format(accuracy = 1))
 
   WB_AS_G2_PRBC2 + theme_pub()
@@ -2519,7 +2519,7 @@ gistool_NP30_HF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = expression('Depth'~(m))) +
-    scale_x_continuous(limits = c(0,20), breaks = seq(0,20, by = 2), labels = scales::number_format(accuracy = 1), position = 'top') +
+    scale_x_continuous(limits = c(0,30), breaks = seq(0,30, by = 5), labels = scales::number_format(accuracy = 1), position = 'top') +
     scale_y_continuous(limits = c(-10,0), breaks = seq(-10,0, by = 2), labels = scales::number_format(accuracy = 1))
 
   WB_AS_G3_PRBC2 + theme_pub()
@@ -2531,7 +2531,7 @@ gistool_NP30_HF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
-    scale_x_continuous(limits = c(0,20), breaks = seq(0,20, by = 2), labels = scales::number_format(accuracy = 1), position = 'top') +
+    scale_x_continuous(limits = c(0,30), breaks = seq(0,30, by = 5), labels = scales::number_format(accuracy = 1), position = 'top') +
     scale_y_continuous(limits = c(-10,0), breaks = seq(-10,0, by = 2), labels = scales::number_format(accuracy = 1))
 
   WB_AS_G4_PRBC2 + theme_pub()
@@ -2543,7 +2543,7 @@ gistool_NP30_HF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
-    scale_x_continuous(limits = c(0,20), breaks = seq(0,20, by = 2), labels = scales::number_format(accuracy = 1), position = 'top') +
+    scale_x_continuous(limits = c(0,30), breaks = seq(0,30, by = 5), labels = scales::number_format(accuracy = 1), position = 'top') +
     scale_y_continuous(limits = c(-10,0), breaks = seq(-10,0, by = 2), labels = scales::number_format(accuracy = 1))
 
   WB_AS_G5_PRBC2 + theme_pub()
@@ -2555,7 +2555,7 @@ gistool_NP30_HF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
-    scale_x_continuous(limits = c(0,20), breaks = seq(0,20, by = 2), labels = scales::number_format(accuracy = 1), position = 'top') +
+    scale_x_continuous(limits = c(0,30), breaks = seq(0,30, by = 5), labels = scales::number_format(accuracy = 1), position = 'top') +
     scale_y_continuous(limits = c(-10,0), breaks = seq(-10,0, by = 2), labels = scales::number_format(accuracy = 1))
 
   WB_AS_G6_PRBC2 + theme_pub()
