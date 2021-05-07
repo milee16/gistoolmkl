@@ -3242,7 +3242,7 @@ gistoolHF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = expression('                                                                                         DIN'~(g~N*~m^-3)), y = '') +
-    scale_x_continuous(limits = c(0,0.5), breaks = seq(0,0.5, by = 0.1), labels = scales::number_format(accuracy = 0.1), position = 'top') +
+    scale_x_continuous(limits = c(0,0.3), breaks = seq(0,0.3, by = 0.1), labels = scales::number_format(accuracy = 0.1), position = 'top') +
     scale_y_continuous(limits = c(-10,0), breaks = seq(-10,0, by = 2), labels = scales::number_format(accuracy = 1))
 
   WB_AS_G1_DIN + theme_pub()
@@ -3600,6 +3600,103 @@ gistoolHF_MM <- function() {
 
            width = 30,
            height = 30,
+           units = 'cm',
+           device='tiff',
+           dpi=300)
+
+
+  #HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH TEST HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+
+  WB_B_DIN_vs_lower <<- ggplot(WB_B_AG, aes(x = DIN, y = lower, group = WB_gradient_no)) +
+    geom_path(size = 1) +
+    geom_point(aes(shape = WB_gradient_no, color = WB_gradient_no, fill = WB_gradient_no), size = 3) +
+    scale_shape_manual(values = c(21, 24, 22, 22, 24, 21)) +
+    scale_color_manual(values = c('black', 'black', 'black', 'black', 'black', 'black')) +
+    scale_fill_manual(values = c('black', 'black', 'black', 'white', 'white', 'white')) +
+    labs(x = expression('DIN'~(g~N*~m^-3)), y = expression('Depth'~(m)))+
+    scale_x_continuous(limits = c(0,0.3), breaks = seq(0,0.3, by = 0.05), labels = scales::number_format(accuracy = 0.01), position = 'top') +
+    scale_y_continuous(limits = c(-10,0), breaks = seq(-10,0, by = 2), labels = scales::number_format(accuracy = 1))
+
+  WB_B_DIN_vs_lower + theme_pub()
+
+
+  WB_S1_DIN_vs_lower <<- ggplot(WB_S1_AG, aes(x = DIN, y = lower, group = WB_gradient_no)) +
+    geom_path(size = 1) +
+    geom_point(aes(shape = WB_gradient_no, color = WB_gradient_no, fill = WB_gradient_no), size = 3) +
+    scale_shape_manual(values = c(21, 24, 22, 22, 24, 21)) +
+    scale_color_manual(values = c('black', 'black', 'black', 'black', 'black', 'black')) +
+    scale_fill_manual(values = c('black', 'black', 'black', 'white', 'white', 'white')) +
+    labs(x = expression('DIN'~(g~N*~m^-3)), y = expression('Depth'~(m)))+
+    scale_x_continuous(limits = c(0,0.3), breaks = seq(0,0.3, by = 0.05), labels = scales::number_format(accuracy = 0.01), position = 'top') +
+    scale_y_continuous(limits = c(-10,0), breaks = seq(-10,0, by = 2), labels = scales::number_format(accuracy = 1))
+
+  WB_S1_DIN_vs_lower + theme_pub()
+
+
+  WB_S2_DIN_vs_lower <<- ggplot(WB_S2_AG, aes(x = DIN, y = lower, group = WB_gradient_no)) +
+    geom_path(size = 1) +
+    geom_point(aes(shape = WB_gradient_no, color = WB_gradient_no, fill = WB_gradient_no), size = 3) +
+    scale_shape_manual(values = c(21, 24, 22, 22, 24, 21)) +
+    scale_color_manual(values = c('black', 'black', 'black', 'black', 'black', 'black')) +
+    scale_fill_manual(values = c('black', 'black', 'black', 'white', 'white', 'white')) +
+    labs(x = expression('DIN'~(g~N*~m^-3)), y = expression('Depth'~(m)))+
+    scale_x_continuous(limits = c(0,0.3), breaks = seq(0,0.3, by = 0.05), labels = scales::number_format(accuracy = 0.01), position = 'top') +
+    scale_y_continuous(limits = c(-10,0), breaks = seq(-10,0, by = 2), labels = scales::number_format(accuracy = 1))
+
+  WB_S2_DIN_vs_lower + theme_pub()
+
+
+  WB_B_DIN_b_vs_lower <<- ggplot(WB_B_AG, aes(x = DIN_b, y = lower, group = WB_gradient_no)) +
+    geom_path(size = 1) +
+    geom_point(aes(shape = WB_gradient_no, color = WB_gradient_no, fill = WB_gradient_no), size = 3) +
+    scale_shape_manual(values = c(21, 24, 22, 22, 24, 21)) +
+    scale_color_manual(values = c('black', 'black', 'black', 'black', 'black', 'black')) +
+    scale_fill_manual(values = c('black', 'black', 'black', 'white', 'white', 'white')) +
+    labs(x = expression('Bottom DIN'~(g~N*~m^-3)), y = expression('Depth'~(m)))+
+    scale_x_continuous(limits = c(0,0.3), breaks = seq(0,0.3, by = 0.05), labels = scales::number_format(accuracy = 0.01), position = 'top') +
+    scale_y_continuous(limits = c(-10,0), breaks = seq(-10,0, by = 2), labels = scales::number_format(accuracy = 1))
+
+  WB_B_DIN_b_vs_lower + theme_pub()
+
+
+  WB_S1_DIN_b_vs_lower <<- ggplot(WB_S1_AG, aes(x = DIN_b, y = lower, group = WB_gradient_no)) +
+    geom_path(size = 1) +
+    geom_point(aes(shape = WB_gradient_no, color = WB_gradient_no, fill = WB_gradient_no), size = 3) +
+    scale_shape_manual(values = c(21, 24, 22, 22, 24, 21)) +
+    scale_color_manual(values = c('black', 'black', 'black', 'black', 'black', 'black')) +
+    scale_fill_manual(values = c('black', 'black', 'black', 'white', 'white', 'white')) +
+    labs(x = expression('Bottom DIN'~(g~N*~m^-3)), y = expression('Depth'~(m)))+
+    scale_x_continuous(limits = c(0,0.3), breaks = seq(0,0.3, by = 0.05), labels = scales::number_format(accuracy = 0.01), position = 'top') +
+    scale_y_continuous(limits = c(-10,0), breaks = seq(-10,0, by = 2), labels = scales::number_format(accuracy = 1))
+
+  WB_S1_DIN_b_vs_lower + theme_pub()
+
+
+  WB_S2_DIN_b_vs_lower <<- ggplot(WB_S2_AG, aes(x = DIN_b, y = lower, group = WB_gradient_no)) +
+    geom_path(size = 1) +
+    geom_point(aes(shape = WB_gradient_no, color = WB_gradient_no, fill = WB_gradient_no), size = 3) +
+    scale_shape_manual(values = c(21, 24, 22, 22, 24, 21)) +
+    scale_color_manual(values = c('black', 'black', 'black', 'black', 'black', 'black')) +
+    scale_fill_manual(values = c('black', 'black', 'black', 'white', 'white', 'white')) +
+    labs(x = expression('Bottom DIN'~(g~N*~m^-3)), y = expression('Depth'~(m)))+
+    scale_x_continuous(limits = c(0,0.3), breaks = seq(0,0.3, by = 0.05), labels = scales::number_format(accuracy = 0.01), position = 'top') +
+    scale_y_continuous(limits = c(-10,0), breaks = seq(-10,0, by = 2), labels = scales::number_format(accuracy = 1))
+
+  WB_S2_DIN_b_vs_lower + theme_pub()
+
+
+  WB_B_DIN_vs_lower+ theme_pub() + labs(x = '', y = '') + theme(legend.justification = c(1.1,1.55), plot.tag.position = c(0.952,0.77), plot.tag = element_text(size = 22), axis.title = element_text(size = 18)) +
+    WB_S1_DIN_vs_lower+ theme_pub() + labs(x = expression('DIN'~(g~N*~m^-3)), y = '') + theme(legend.justification = c(1,1.55), plot.tag.position = c(0.952,0.77), plot.tag = element_text(size = 22), axis.title = element_text(size = 18)) +
+    WB_S2_DIN_vs_lower+ theme_pub() + labs(x = '', y = '') + theme(legend.justification = c(1,1.55), plot.tag.position = c(0.952,0.77), plot.tag = element_text(size = 22), axis.title = element_text(size = 18)) +
+    WB_B_DIN_b_vs_lower+ theme_pub() + labs(x = '', y = '                                                              Depth (m)') + theme(legend.justification = c(1,1.55), plot.tag.position = c(0.952,0.77), plot.tag = element_text(size = 22), axis.title = element_text(size = 18)) +
+    WB_S1_DIN_b_vs_lower+ theme_pub() + labs(x = expression('Bottom DIN'~(g~N*~m^-3)), y = '') + theme(legend.justification = c(1,1.55), plot.tag.position = c(0.952,0.77), plot.tag = element_text(size = 22), axis.title = element_text(size = 18)) +
+    WB_S2_DIN_b_vs_lower + theme_pub() + labs(x = '', y = '') + theme(legend.justification = c(1,1.55), plot.tag.position = c(0.952,0.77), plot.tag = element_text(size = 22), axis.title = element_text(size = 18)) +
+    plot_layout(ncol = 3) +
+    plot_annotation(tag_levels = 'A') +
+    ggsave(filename = 'WB_SB_AG_DIN_DIN_b.tiff',
+
+           width = 35,
+           height = 20,
            units = 'cm',
            device='tiff',
            dpi=300)
