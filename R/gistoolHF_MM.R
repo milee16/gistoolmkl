@@ -3242,7 +3242,7 @@ gistoolHF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = expression('                                                                                         DIN'~(g~N*~m^-3)), y = '') +
-    scale_x_continuous(limits = c(0,0.3), breaks = seq(0,0.3, by = 0.1), labels = scales::number_format(accuracy = 0.1), position = 'top') +
+    scale_x_continuous(limits = c(0,0.30), breaks = seq(0,0.30, by = 0.05), labels = scales::number_format(accuracy = 0.01), position = 'top') +
     scale_y_continuous(limits = c(-10,0), breaks = seq(-10,0, by = 2), labels = scales::number_format(accuracy = 1))
 
   WB_AS_G1_DIN + theme_pub()
@@ -3254,7 +3254,7 @@ gistoolHF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
-    scale_x_continuous(limits = c(0,0.5), breaks = seq(0,0.5, by = 0.1), labels = scales::number_format(accuracy = 0.1), position = 'top') +
+    scale_x_continuous(limits = c(0,0.30), breaks = seq(0,0.30, by = 0.05), labels = scales::number_format(accuracy = 0.01), position = 'top') +
     scale_y_continuous(limits = c(-10,0), breaks = seq(-10,0, by = 2), labels = scales::number_format(accuracy = 1))
 
   WB_AS_G2_DIN + theme_pub()
@@ -3266,7 +3266,7 @@ gistoolHF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = expression('Depth'~(m))) +
-    scale_x_continuous(limits = c(0,0.5), breaks = seq(0,0.5, by = 0.1), labels = scales::number_format(accuracy = 0.1), position = 'top') +
+    scale_x_continuous(limits = c(0,0.30), breaks = seq(0,0.30, by = 0.05), labels = scales::number_format(accuracy = 0.01), position = 'top') +
     scale_y_continuous(limits = c(-10,0), breaks = seq(-10,0, by = 2), labels = scales::number_format(accuracy = 1))
 
   WB_AS_G3_DIN + theme_pub()
@@ -3278,7 +3278,7 @@ gistoolHF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
-    scale_x_continuous(limits = c(0,0.5), breaks = seq(0,0.5, by = 0.1), labels = scales::number_format(accuracy = 0.1), position = 'top') +
+    scale_x_continuous(limits = c(0,0.30), breaks = seq(0,0.30, by = 0.05), labels = scales::number_format(accuracy = 0.01), position = 'top') +
     scale_y_continuous(limits = c(-10,0), breaks = seq(-10,0, by = 2), labels = scales::number_format(accuracy = 1))
 
   WB_AS_G4_DIN + theme_pub()
@@ -3290,7 +3290,7 @@ gistoolHF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
-    scale_x_continuous(limits = c(0,0.5), breaks = seq(0,0.5, by = 0.1), labels = scales::number_format(accuracy = 0.1), position = 'top') +
+    scale_x_continuous(limits = c(0,0.30), breaks = seq(0,0.30, by = 0.05), labels = scales::number_format(accuracy = 0.01), position = 'top') +
     scale_y_continuous(limits = c(-10,0), breaks = seq(-10,0, by = 2), labels = scales::number_format(accuracy = 1))
 
   WB_AS_G5_DIN + theme_pub()
@@ -3302,7 +3302,7 @@ gistoolHF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
-    scale_x_continuous(limits = c(0,0.5), breaks = seq(0,0.5, by = 0.1), labels = scales::number_format(accuracy = 0.1), position = 'top') +
+    scale_x_continuous(limits = c(0,0.30), breaks = seq(0,0.30, by = 0.05), labels = scales::number_format(accuracy = 0.01), position = 'top') +
     scale_y_continuous(limits = c(-10,0), breaks = seq(-10,0, by = 2), labels = scales::number_format(accuracy = 1))
 
   WB_AS_G6_DIN + theme_pub()
@@ -3334,7 +3334,7 @@ gistoolHF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = expression('                                                                                         DIN_b'~(g~N*~m^-3)), y = '') +
-    scale_x_continuous(limits = c(0,0.45), breaks = seq(0,0.45, by = 0.05), labels = scales::number_format(accuracy = 0.01), position = 'top') +
+    scale_x_continuous(limits = c(0,0.30), breaks = seq(0,0.30, by = 0.05), labels = scales::number_format(accuracy = 0.01), position = 'top') +
     scale_y_continuous(limits = c(-10,0), breaks = seq(-10,0, by = 2), labels = scales::number_format(accuracy = 1))
 
   WB_AS_G1_DIN_b + theme_pub()
@@ -3346,7 +3346,7 @@ gistoolHF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
-    scale_x_continuous(limits = c(0,0.45), breaks = seq(0,0.45, by = 0.05), labels = scales::number_format(accuracy = 0.01), position = 'top') +
+    scale_x_continuous(limits = c(0,0.30), breaks = seq(0,0.30, by = 0.05), labels = scales::number_format(accuracy = 0.01), position = 'top') +
     scale_y_continuous(limits = c(-10,0), breaks = seq(-10,0, by = 2), labels = scales::number_format(accuracy = 1))
 
   WB_AS_G2_DIN_b + theme_pub()
@@ -3358,7 +3358,7 @@ gistoolHF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = expression('Depth'~(m))) +
-    scale_x_continuous(limits = c(0,0.45), breaks = seq(0,0.45, by = 0.05), labels = scales::number_format(accuracy = 0.01), position = 'top') +
+    scale_x_continuous(limits = c(0,0.30), breaks = seq(0,0.30, by = 0.05), labels = scales::number_format(accuracy = 0.01), position = 'top') +
     scale_y_continuous(limits = c(-10,0), breaks = seq(-10,0, by = 2), labels = scales::number_format(accuracy = 1))
 
   WB_AS_G3_DIN_b + theme_pub()
@@ -3370,7 +3370,7 @@ gistoolHF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
-    scale_x_continuous(limits = c(0,0.45), breaks = seq(0,0.45, by = 0.05), labels = scales::number_format(accuracy = 0.01), position = 'top') +
+    scale_x_continuous(limits = c(0,0.30), breaks = seq(0,0.30, by = 0.05), labels = scales::number_format(accuracy = 0.01), position = 'top') +
     scale_y_continuous(limits = c(-10,0), breaks = seq(-10,0, by = 2), labels = scales::number_format(accuracy = 1))
 
   WB_AS_G4_DIN_b + theme_pub()
@@ -3382,7 +3382,7 @@ gistoolHF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
-    scale_x_continuous(limits = c(0,0.45), breaks = seq(0,0.45, by = 0.05), labels = scales::number_format(accuracy = 0.01), position = 'top') +
+    scale_x_continuous(limits = c(0,0.30), breaks = seq(0,0.30, by = 0.05), labels = scales::number_format(accuracy = 0.01), position = 'top') +
     scale_y_continuous(limits = c(-10,0), breaks = seq(-10,0, by = 2), labels = scales::number_format(accuracy = 1))
 
   WB_AS_G5_DIN_b + theme_pub()
@@ -3394,7 +3394,7 @@ gistoolHF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
-    scale_x_continuous(limits = c(0,0.45), breaks = seq(0,0.45, by = 0.05), labels = scales::number_format(accuracy = 0.01), position = 'top') +
+    scale_x_continuous(limits = c(0,0.30), breaks = seq(0,0.30, by = 0.05), labels = scales::number_format(accuracy = 0.01), position = 'top') +
     scale_y_continuous(limits = c(-10,0), breaks = seq(-10,0, by = 2), labels = scales::number_format(accuracy = 1))
 
   WB_AS_G6_DIN_b + theme_pub()
@@ -3428,7 +3428,7 @@ gistoolHF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = expression('                                                                                         DIP'~(g~P*~m^-3)), y = '') +
-    scale_x_continuous(limits = c(0,0.03), breaks = seq(0,0.03, by = 0.01), labels = scales::number_format(accuracy = 0.01), position = 'top') +
+    scale_x_continuous(limits = c(0,0.025), breaks = seq(0,0.025, by = 0.005), labels = scales::number_format(accuracy = 0.001), position = 'top') +
     scale_y_continuous(limits = c(-10,0), breaks = seq(-10,0, by = 2), labels = scales::number_format(accuracy = 1))
 
   WB_AS_G1_DIP + theme_pub()
@@ -3440,7 +3440,7 @@ gistoolHF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
-    scale_x_continuous(limits = c(0,0.03), breaks = seq(0,0.03, by = 0.01), labels = scales::number_format(accuracy = 0.01), position = 'top') +
+    scale_x_continuous(limits = c(0,0.025), breaks = seq(0,0.025, by = 0.005), labels = scales::number_format(accuracy = 0.001), position = 'top') +
     scale_y_continuous(limits = c(-10,0), breaks = seq(-10,0, by = 2), labels = scales::number_format(accuracy = 1))
 
   WB_AS_G2_DIP + theme_pub()
@@ -3452,7 +3452,7 @@ gistoolHF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = expression('Depth'~(m))) +
-    scale_x_continuous(limits = c(0,0.03), breaks = seq(0,0.03, by = 0.01), labels = scales::number_format(accuracy = 0.01), position = 'top') +
+    scale_x_continuous(limits = c(0,0.025), breaks = seq(0,0.025, by = 0.005), labels = scales::number_format(accuracy = 0.001), position = 'top') +
     scale_y_continuous(limits = c(-10,0), breaks = seq(-10,0, by = 2), labels = scales::number_format(accuracy = 1))
 
   WB_AS_G3_DIP + theme_pub()
@@ -3464,7 +3464,7 @@ gistoolHF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
-    scale_x_continuous(limits = c(0,0.03), breaks = seq(0,0.03, by = 0.01), labels = scales::number_format(accuracy = 0.01), position = 'top') +
+    scale_x_continuous(limits = c(0,0.025), breaks = seq(0,0.025, by = 0.005), labels = scales::number_format(accuracy = 0.001), position = 'top') +
     scale_y_continuous(limits = c(-10,0), breaks = seq(-10,0, by = 2), labels = scales::number_format(accuracy = 1))
 
   WB_AS_G4_DIP + theme_pub()
@@ -3476,7 +3476,7 @@ gistoolHF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
-    scale_x_continuous(limits = c(0,0.03), breaks = seq(0,0.03, by = 0.01), labels = scales::number_format(accuracy = 0.01), position = 'top') +
+    scale_x_continuous(limits = c(0,0.025), breaks = seq(0,0.025, by = 0.005), labels = scales::number_format(accuracy = 0.001), position = 'top') +
     scale_y_continuous(limits = c(-10,0), breaks = seq(-10,0, by = 2), labels = scales::number_format(accuracy = 1))
 
   WB_AS_G5_DIP + theme_pub()
@@ -3488,7 +3488,7 @@ gistoolHF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
-    scale_x_continuous(limits = c(0,0.03), breaks = seq(0,0.03, by = 0.01), labels = scales::number_format(accuracy = 0.01), position = 'top') +
+    scale_x_continuous(limits = c(0,0.025), breaks = seq(0,0.025, by = 0.005), labels = scales::number_format(accuracy = 0.001), position = 'top') +
     scale_y_continuous(limits = c(-10,0), breaks = seq(-10,0, by = 2), labels = scales::number_format(accuracy = 1))
 
   WB_AS_G6_DIP + theme_pub()
@@ -3523,7 +3523,7 @@ gistoolHF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = expression('                                                                                         DIP_b'~(g~P*~m^-3)), y = '') +
-    scale_x_continuous(limits = c(0,0.04), breaks = seq(0,0.04, by = 0.01), labels = scales::number_format(accuracy = 0.01), position = 'top') +
+    scale_x_continuous(limits = c(0,0.03), breaks = seq(0,0.03, by = 0.01), labels = scales::number_format(accuracy = 0.01), position = 'top') +
     scale_y_continuous(limits = c(-10,0), breaks = seq(-10,0, by = 2), labels = scales::number_format(accuracy = 1))
 
   WB_AS_G1_DIP_b + theme_pub()
@@ -3535,7 +3535,7 @@ gistoolHF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
-    scale_x_continuous(limits = c(0,0.04), breaks = seq(0,0.04, by = 0.01), labels = scales::number_format(accuracy = 0.01), position = 'top') +
+    scale_x_continuous(limits = c(0,0.03), breaks = seq(0,0.03, by = 0.01), labels = scales::number_format(accuracy = 0.01), position = 'top') +
     scale_y_continuous(limits = c(-10,0), breaks = seq(-10,0, by = 2), labels = scales::number_format(accuracy = 1))
 
   WB_AS_G2_DIP_b + theme_pub()
@@ -3547,7 +3547,7 @@ gistoolHF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = expression('Depth'~(m))) +
-    scale_x_continuous(limits = c(0,0.04), breaks = seq(0,0.04, by = 0.01), labels = scales::number_format(accuracy = 0.01), position = 'top') +
+    scale_x_continuous(limits = c(0,0.03), breaks = seq(0,0.03, by = 0.01), labels = scales::number_format(accuracy = 0.01), position = 'top') +
     scale_y_continuous(limits = c(-10,0), breaks = seq(-10,0, by = 2), labels = scales::number_format(accuracy = 1))
 
   WB_AS_G3_DIP_b + theme_pub()
@@ -3559,7 +3559,7 @@ gistoolHF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
-    scale_x_continuous(limits = c(0,0.04), breaks = seq(0,0.04, by = 0.01), labels = scales::number_format(accuracy = 0.01), position = 'top') +
+    scale_x_continuous(limits = c(0,0.03), breaks = seq(0,0.03, by = 0.01), labels = scales::number_format(accuracy = 0.01), position = 'top') +
     scale_y_continuous(limits = c(-10,0), breaks = seq(-10,0, by = 2), labels = scales::number_format(accuracy = 1))
 
   WB_AS_G4_DIP_b + theme_pub()
@@ -3571,7 +3571,7 @@ gistoolHF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
-    scale_x_continuous(limits = c(0,0.04), breaks = seq(0,0.04, by = 0.01), labels = scales::number_format(accuracy = 0.01), position = 'top') +
+    scale_x_continuous(limits = c(0,0.03), breaks = seq(0,0.03, by = 0.01), labels = scales::number_format(accuracy = 0.01), position = 'top') +
     scale_y_continuous(limits = c(-10,0), breaks = seq(-10,0, by = 2), labels = scales::number_format(accuracy = 1))
 
   WB_AS_G5_DIP_b + theme_pub()
@@ -3583,7 +3583,7 @@ gistoolHF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
-    scale_x_continuous(limits = c(0,0.04), breaks = seq(0,0.04, by = 0.01), labels = scales::number_format(accuracy = 0.01), position = 'top') +
+    scale_x_continuous(limits = c(0,0.03), breaks = seq(0,0.03, by = 0.01), labels = scales::number_format(accuracy = 0.01), position = 'top') +
     scale_y_continuous(limits = c(-10,0), breaks = seq(-10,0, by = 2), labels = scales::number_format(accuracy = 1))
 
   WB_AS_G6_DIP_b + theme_pub()

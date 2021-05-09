@@ -2940,7 +2940,7 @@ gistoolVF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = expression('                                                                                         DIN'~(g~N*~m^-3)), y = '') +
-    scale_x_continuous(limits = c(0,0.5), breaks = seq(0,0.5, by = 0.1), labels = scales::number_format(accuracy = 0.1), position = 'top') +
+    scale_x_continuous(limits = c(0,0.4), breaks = seq(0,0.4, by = 0.1), labels = scales::number_format(accuracy = 0.1), position = 'top') +
     scale_y_continuous(limits = c(-8,0), breaks = seq(-8,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
@@ -2953,7 +2953,7 @@ gistoolVF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
-    scale_x_continuous(limits = c(0,0.5), breaks = seq(0,0.5, by = 0.1), labels = scales::number_format(accuracy = 0.1), position = 'top') +
+    scale_x_continuous(limits = c(0,0.4), breaks = seq(0,0.4, by = 0.1), labels = scales::number_format(accuracy = 0.1), position = 'top') +
     scale_y_continuous(limits = c(-8,0), breaks = seq(-8,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
@@ -2966,7 +2966,7 @@ gistoolVF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = expression('Depth'~(m))) +
-    scale_x_continuous(limits = c(0,0.5), breaks = seq(0,0.5, by = 0.1), labels = scales::number_format(accuracy = 0.1), position = 'top') +
+    scale_x_continuous(limits = c(0,0.4), breaks = seq(0,0.4, by = 0.1), labels = scales::number_format(accuracy = 0.1), position = 'top') +
     scale_y_continuous(limits = c(-8,0), breaks = seq(-8,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
@@ -2979,7 +2979,7 @@ gistoolVF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
-    scale_x_continuous(limits = c(0,0.5), breaks = seq(0,0.5, by = 0.1), labels = scales::number_format(accuracy = 0.1), position = 'top') +
+    scale_x_continuous(limits = c(0,0.4), breaks = seq(0,0.4, by = 0.1), labels = scales::number_format(accuracy = 0.1), position = 'top') +
     scale_y_continuous(limits = c(-8,0), breaks = seq(-8,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
@@ -2992,7 +2992,7 @@ gistoolVF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
-    scale_x_continuous(limits = c(0,0.5), breaks = seq(0,0.5, by = 0.1), labels = scales::number_format(accuracy = 0.1), position = 'top') +
+    scale_x_continuous(limits = c(0,0.4), breaks = seq(0,0.4, by = 0.1), labels = scales::number_format(accuracy = 0.1), position = 'top') +
     scale_y_continuous(limits = c(-8,0), breaks = seq(-8,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
@@ -3023,7 +3023,7 @@ gistoolVF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = expression('                                                                                         DIN_b'~(g~N*~m^-3)), y = '') +
-    scale_x_continuous(limits = c(0,0.35), breaks = seq(0,0.35, by = 0.05), labels = scales::number_format(accuracy = 0.01), position = 'top') +
+    scale_x_continuous(limits = c(0,0.4), breaks = seq(0,0.4, by = 0.1), labels = scales::number_format(accuracy = 0.1), position = 'top') +
     scale_y_continuous(limits = c(-8,0), breaks = seq(-8,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
@@ -3036,7 +3036,7 @@ gistoolVF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
-    scale_x_continuous(limits = c(0,0.35), breaks = seq(0,0.35, by = 0.05), labels = scales::number_format(accuracy = 0.01), position = 'top') +
+    scale_x_continuous(limits = c(0,0.4), breaks = seq(0,0.4, by = 0.1), labels = scales::number_format(accuracy = 0.1), position = 'top') +
     scale_y_continuous(limits = c(-8,0), breaks = seq(-8,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
@@ -3049,7 +3049,7 @@ gistoolVF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = expression('Depth'~(m))) +
-    scale_x_continuous(limits = c(0,0.35), breaks = seq(0,0.35, by = 0.05), labels = scales::number_format(accuracy = 0.01), position = 'top') +
+    scale_x_continuous(limits = c(0,0.4), breaks = seq(0,0.4, by = 0.1), labels = scales::number_format(accuracy = 0.1), position = 'top') +
     scale_y_continuous(limits = c(-8,0), breaks = seq(-8,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
@@ -3062,7 +3062,7 @@ gistoolVF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
-    scale_x_continuous(limits = c(0,0.35), breaks = seq(0,0.35, by = 0.05), labels = scales::number_format(accuracy = 0.01), position = 'top') +
+    scale_x_continuous(limits = c(0,0.4), breaks = seq(0,0.4, by = 0.1), labels = scales::number_format(accuracy = 0.1), position = 'top') +
     scale_y_continuous(limits = c(-8,0), breaks = seq(-8,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
@@ -3075,7 +3075,7 @@ gistoolVF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
-    scale_x_continuous(limits = c(0,0.35), breaks = seq(0,0.35, by = 0.05), labels = scales::number_format(accuracy = 0.01), position = 'top') +
+    scale_x_continuous(limits = c(0,0.4), breaks = seq(0,0.4, by = 0.1), labels = scales::number_format(accuracy = 0.1), position = 'top') +
     scale_y_continuous(limits = c(-8,0), breaks = seq(-8,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
@@ -3188,7 +3188,7 @@ gistoolVF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = expression('                                                                                         DIP_b'~(g~P*~m^-3)), y = '') +
-    scale_x_continuous(limits = c(0,0.05), breaks = seq(0,0.05, by = 0.01), labels = scales::number_format(accuracy = 0.01), position = 'top') +
+    scale_x_continuous(limits = c(0,0.04), breaks = seq(0,0.04, by = 0.01), labels = scales::number_format(accuracy = 0.01), position = 'top') +
     scale_y_continuous(limits = c(-8,0), breaks = seq(-8,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
@@ -3201,7 +3201,7 @@ gistoolVF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
-    scale_x_continuous(limits = c(0,0.05), breaks = seq(0,0.05, by = 0.01), labels = scales::number_format(accuracy = 0.01), position = 'top') +
+    scale_x_continuous(limits = c(0,0.04), breaks = seq(0,0.04, by = 0.01), labels = scales::number_format(accuracy = 0.01), position = 'top') +
     scale_y_continuous(limits = c(-8,0), breaks = seq(-8,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
@@ -3214,7 +3214,7 @@ gistoolVF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = expression('Depth'~(m))) +
-    scale_x_continuous(limits = c(0,0.05), breaks = seq(0,0.05, by = 0.01), labels = scales::number_format(accuracy = 0.01), position = 'top') +
+    scale_x_continuous(limits = c(0,0.04), breaks = seq(0,0.04, by = 0.01), labels = scales::number_format(accuracy = 0.01), position = 'top') +
     scale_y_continuous(limits = c(-8,0), breaks = seq(-8,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
@@ -3227,7 +3227,7 @@ gistoolVF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
-    scale_x_continuous(limits = c(0,0.05), breaks = seq(0,0.05, by = 0.01), labels = scales::number_format(accuracy = 0.01), position = 'top') +
+    scale_x_continuous(limits = c(0,0.04), breaks = seq(0,0.04, by = 0.01), labels = scales::number_format(accuracy = 0.01), position = 'top') +
     scale_y_continuous(limits = c(-8,0), breaks = seq(-8,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
@@ -3240,7 +3240,7 @@ gistoolVF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
-    scale_x_continuous(limits = c(0,0.05), breaks = seq(0,0.05, by = 0.01), labels = scales::number_format(accuracy = 0.01), position = 'top') +
+    scale_x_continuous(limits = c(0,0.04), breaks = seq(0,0.04, by = 0.01), labels = scales::number_format(accuracy = 0.01), position = 'top') +
     scale_y_continuous(limits = c(-8,0), breaks = seq(-8,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 

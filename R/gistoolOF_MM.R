@@ -2604,7 +2604,7 @@ gistoolOF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = expression('                                                                                         DIN'~(g~N*~m^-3)), y = '') +
-    scale_x_continuous(limits = c(0,0.5), breaks = seq(0,0.5, by = 0.1), labels = scales::number_format(accuracy = 0.1), position = 'top') +
+    scale_x_continuous(limits = c(0,0.8), breaks = seq(0,0.8, by = 0.2), labels = scales::number_format(accuracy = 0.1), position = 'top') +
     scale_y_continuous(limits = c(-8,0), breaks = seq(-8,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
@@ -2617,7 +2617,7 @@ gistoolOF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
-    scale_x_continuous(limits = c(0,0.5), breaks = seq(0,0.5, by = 0.1), labels = scales::number_format(accuracy = 0.1), position = 'top') +
+    scale_x_continuous(limits = c(0,0.8), breaks = seq(0,0.8, by = 0.2), labels = scales::number_format(accuracy = 0.1), position = 'top') +
     scale_y_continuous(limits = c(-8,0), breaks = seq(-8,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
@@ -2629,8 +2629,8 @@ gistoolOF_MM <- function() {
     scale_shape_manual(values = c(22, 22, 24)) +
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
-    labs(x = '', y = expression('Depth'~(m))) +
-    scale_x_continuous(limits = c(0,0.5), breaks = seq(0,0.5, by = 0.1), labels = scales::number_format(accuracy = 0.1), position = 'top') +
+    labs(x = '', y = expression('                                                                                           Depth'~(m))) +
+    scale_x_continuous(limits = c(0,0.8), breaks = seq(0,0.8, by = 0.2), labels = scales::number_format(accuracy = 0.1), position = 'top') +
     scale_y_continuous(limits = c(-8,0), breaks = seq(-8,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
@@ -2643,17 +2643,17 @@ gistoolOF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
-    scale_x_continuous(limits = c(0,0.5), breaks = seq(0,0.5, by = 0.1), labels = scales::number_format(accuracy = 0.1), position = 'top') +
+    scale_x_continuous(limits = c(0,0.8), breaks = seq(0,0.8, by = 0.2), labels = scales::number_format(accuracy = 0.1), position = 'top') +
     scale_y_continuous(limits = c(-8,0), breaks = seq(-8,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
   WB_AS_G4_DIN + theme_pub()
 
 
-  WB_AS_G1_DIN+ theme_pub() + theme(legend.justification = c(1,2.8), plot.tag.position = c(0.93,0.77), plot.tag = element_text(size = 22), axis.title = element_text(size = 18)) +
-    WB_AS_G2_DIN+ theme_pub() + theme(legend.justification = c(1,2.8), plot.tag.position = c(0.93,0.77), plot.tag = element_text(size = 22), axis.title = element_text(size = 18)) +
-    WB_AS_G3_DIN+ theme_pub() + theme(legend.justification = c(1,2.8), plot.tag.position = c(0.93,0.77), plot.tag = element_text(size = 22), axis.title = element_text(size = 18)) +
-    WB_AS_G4_DIN+ theme_pub() + theme(legend.justification = c(1,2.8), plot.tag.position = c(0.93,0.77), plot.tag = element_text(size = 22), axis.title = element_text(size = 18)) +
+  WB_AS_G1_DIN+ theme_pub() + theme(legend.justification = c(1,4.5), plot.tag.position = c(0.93,0.82), plot.tag = element_text(size = 22), axis.title = element_text(size = 18)) +
+    WB_AS_G2_DIN+ theme_pub() + theme(legend.justification = c(1,4.5), plot.tag.position = c(0.93,0.82), plot.tag = element_text(size = 22), axis.title = element_text(size = 18)) +
+    WB_AS_G3_DIN+ theme_pub() + theme(legend.justification = c(1,4.5), plot.tag.position = c(0.93,0.82), plot.tag = element_text(size = 22), axis.title = element_text(size = 18)) +
+    WB_AS_G4_DIN+ theme_pub() + theme(legend.justification = c(1,4.5), plot.tag.position = c(0.93,0.82), plot.tag = element_text(size = 22), axis.title = element_text(size = 18)) +
     plot_layout(ncol = 2) +
     plot_annotation(tag_levels = '1', tag_prefix = 'no. ') +
     ggsave(filename = 'WB_ASAG_DIN_vs_lower.tiff',
@@ -2674,7 +2674,7 @@ gistoolOF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = expression('                                                                                         DIN_b'~(g~N*~m^-3)), y = '') +
-    scale_x_continuous(limits = c(0,0.35), breaks = seq(0,0.35, by = 0.05), labels = scales::number_format(accuracy = 0.01), position = 'top') +
+    scale_x_continuous(limits = c(0,0.8), breaks = seq(0,0.8, by = 0.2), labels = scales::number_format(accuracy = 0.1), position = 'top') +
     scale_y_continuous(limits = c(-8,0), breaks = seq(-8,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
@@ -2687,7 +2687,7 @@ gistoolOF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
-    scale_x_continuous(limits = c(0,0.35), breaks = seq(0,0.35, by = 0.05), labels = scales::number_format(accuracy = 0.01), position = 'top') +
+    scale_x_continuous(limits = c(0,0.8), breaks = seq(0,0.8, by = 0.2), labels = scales::number_format(accuracy = 0.1), position = 'top') +
     scale_y_continuous(limits = c(-8,0), breaks = seq(-8,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
@@ -2699,8 +2699,8 @@ gistoolOF_MM <- function() {
     scale_shape_manual(values = c(22, 22, 24)) +
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
-    labs(x = '', y = expression('Depth'~(m))) +
-    scale_x_continuous(limits = c(0,0.35), breaks = seq(0,0.35, by = 0.05), labels = scales::number_format(accuracy = 0.01), position = 'top') +
+    labs(x = '', y = expression('                                                                                           Depth'~(m))) +
+    scale_x_continuous(limits = c(0,0.8), breaks = seq(0,0.8, by = 0.2), labels = scales::number_format(accuracy = 0.1), position = 'top') +
     scale_y_continuous(limits = c(-8,0), breaks = seq(-8,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
@@ -2713,17 +2713,17 @@ gistoolOF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
-    scale_x_continuous(limits = c(0,0.35), breaks = seq(0,0.35, by = 0.05), labels = scales::number_format(accuracy = 0.01), position = 'top') +
+    scale_x_continuous(limits = c(0,0.8), breaks = seq(0,0.8, by = 0.2), labels = scales::number_format(accuracy = 0.1), position = 'top') +
     scale_y_continuous(limits = c(-8,0), breaks = seq(-8,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
   WB_AS_G4_DIN_b + theme_pub()
 
 
-  WB_AS_G1_DIN_b+ theme_pub() + theme(legend.justification = c(1,2.8), plot.tag.position = c(0.93,0.77), plot.tag = element_text(size = 22), axis.title = element_text(size = 18)) +
-    WB_AS_G2_DIN_b+ theme_pub() + theme(legend.justification = c(1,2.8), plot.tag.position = c(0.93,0.77), plot.tag = element_text(size = 22), axis.title = element_text(size = 18)) +
-    WB_AS_G3_DIN_b+ theme_pub() + theme(legend.justification = c(1,2.8), plot.tag.position = c(0.93,0.77), plot.tag = element_text(size = 22), axis.title = element_text(size = 18)) +
-    WB_AS_G4_DIN_b+ theme_pub() + theme(legend.justification = c(1,2.8), plot.tag.position = c(0.93,0.77), plot.tag = element_text(size = 22), axis.title = element_text(size = 18)) +
+  WB_AS_G1_DIN_b+ theme_pub() + theme(legend.justification = c(1,4.5), plot.tag.position = c(0.93,0.82), plot.tag = element_text(size = 22), axis.title = element_text(size = 18)) +
+    WB_AS_G2_DIN_b+ theme_pub() + theme(legend.justification = c(1,4.5), plot.tag.position = c(0.93,0.82), plot.tag = element_text(size = 22), axis.title = element_text(size = 18)) +
+    WB_AS_G3_DIN_b+ theme_pub() + theme(legend.justification = c(1,4.5), plot.tag.position = c(0.93,0.82), plot.tag = element_text(size = 22), axis.title = element_text(size = 18)) +
+    WB_AS_G4_DIN_b+ theme_pub() + theme(legend.justification = c(1,4.5), plot.tag.position = c(0.93,0.82), plot.tag = element_text(size = 22), axis.title = element_text(size = 18)) +
     plot_layout(ncol = 2) +
     plot_annotation(tag_levels = '1', tag_prefix = 'no. ') +
     ggsave(filename = 'WB_ASAG_DIN_b_vs_lower.tiff',
@@ -2743,7 +2743,7 @@ gistoolOF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = expression('                                                                                         DIP'~(g~P*~m^-3)), y = '') +
-    scale_x_continuous(limits = c(0,0.04), breaks = seq(0,0.04, by = 0.01), labels = scales::number_format(accuracy = 0.01), position = 'top') +
+    scale_x_continuous(limits = c(0,0.03), breaks = seq(0,0.03, by = 0.01), labels = scales::number_format(accuracy = 0.01), position = 'top') +
     scale_y_continuous(limits = c(-8,0), breaks = seq(-8,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
@@ -2756,7 +2756,7 @@ gistoolOF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
-    scale_x_continuous(limits = c(0,0.04), breaks = seq(0,0.04, by = 0.01), labels = scales::number_format(accuracy = 0.01), position = 'top') +
+    scale_x_continuous(limits = c(0,0.03), breaks = seq(0,0.03, by = 0.01), labels = scales::number_format(accuracy = 0.01), position = 'top') +
     scale_y_continuous(limits = c(-8,0), breaks = seq(-8,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
@@ -2768,8 +2768,8 @@ gistoolOF_MM <- function() {
     scale_shape_manual(values = c(22, 22, 24)) +
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
-    labs(x = '', y = expression('Depth'~(m))) +
-    scale_x_continuous(limits = c(0,0.04), breaks = seq(0,0.04, by = 0.01), labels = scales::number_format(accuracy = 0.01), position = 'top') +
+    labs(x = '', y = expression('                                                                                           Depth'~(m))) +
+    scale_x_continuous(limits = c(0,0.03), breaks = seq(0,0.03, by = 0.01), labels = scales::number_format(accuracy = 0.01), position = 'top') +
     scale_y_continuous(limits = c(-8,0), breaks = seq(-8,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
@@ -2782,17 +2782,17 @@ gistoolOF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
-    scale_x_continuous(limits = c(0,0.04), breaks = seq(0,0.04, by = 0.01), labels = scales::number_format(accuracy = 0.01), position = 'top') +
+    scale_x_continuous(limits = c(0,0.03), breaks = seq(0,0.03, by = 0.01), labels = scales::number_format(accuracy = 0.01), position = 'top') +
     scale_y_continuous(limits = c(-8,0), breaks = seq(-8,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
   WB_AS_G4_DIP + theme_pub()
 
 
-  WB_AS_G1_DIP+ theme_pub() + theme(legend.justification = c(1,2.8), plot.tag.position = c(0.93,0.77), plot.tag = element_text(size = 22), axis.title = element_text(size = 18)) +
-    WB_AS_G2_DIP+ theme_pub() + theme(legend.justification = c(1,2.8), plot.tag.position = c(0.93,0.77), plot.tag = element_text(size = 22), axis.title = element_text(size = 18)) +
-    WB_AS_G3_DIP+ theme_pub() + theme(legend.justification = c(1,2.8), plot.tag.position = c(0.93,0.77), plot.tag = element_text(size = 22), axis.title = element_text(size = 18)) +
-    WB_AS_G4_DIP+ theme_pub() + theme(legend.justification = c(1,2.8), plot.tag.position = c(0.93,0.77), plot.tag = element_text(size = 22), axis.title = element_text(size = 18)) +
+  WB_AS_G1_DIP+ theme_pub() + theme(legend.justification = c(1,4.5), plot.tag.position = c(0.93,0.82), plot.tag = element_text(size = 22), axis.title = element_text(size = 18)) +
+    WB_AS_G2_DIP+ theme_pub() + theme(legend.justification = c(1,4.5), plot.tag.position = c(0.93,0.82), plot.tag = element_text(size = 22), axis.title = element_text(size = 18)) +
+    WB_AS_G3_DIP+ theme_pub() + theme(legend.justification = c(1,4.5), plot.tag.position = c(0.93,0.82), plot.tag = element_text(size = 22), axis.title = element_text(size = 18)) +
+    WB_AS_G4_DIP+ theme_pub() + theme(legend.justification = c(1,4.5), plot.tag.position = c(0.93,0.82), plot.tag = element_text(size = 22), axis.title = element_text(size = 18)) +
     plot_layout(ncol = 2) +
     plot_annotation(tag_levels = '1', tag_prefix = 'no. ') +
     ggsave(filename = 'WB_ASAG_DIP_vs_lower.tiff',
@@ -2813,7 +2813,7 @@ gistoolOF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = expression('                                                                                         DIP_b'~(g~P*~m^-3)), y = '') +
-    scale_x_continuous(limits = c(0,0.05), breaks = seq(0,0.05, by = 0.01), labels = scales::number_format(accuracy = 0.01), position = 'top') +
+    scale_x_continuous(limits = c(0,0.03), breaks = seq(0,0.03, by = 0.01), labels = scales::number_format(accuracy = 0.01), position = 'top') +
     scale_y_continuous(limits = c(-8,0), breaks = seq(-8,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
@@ -2826,7 +2826,7 @@ gistoolOF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
-    scale_x_continuous(limits = c(0,0.05), breaks = seq(0,0.05, by = 0.01), labels = scales::number_format(accuracy = 0.01), position = 'top') +
+    scale_x_continuous(limits = c(0,0.03), breaks = seq(0,0.03, by = 0.01), labels = scales::number_format(accuracy = 0.01), position = 'top') +
     scale_y_continuous(limits = c(-8,0), breaks = seq(-8,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
@@ -2838,8 +2838,8 @@ gistoolOF_MM <- function() {
     scale_shape_manual(values = c(22, 22, 24)) +
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
-    labs(x = '', y = expression('Depth'~(m))) +
-    scale_x_continuous(limits = c(0,0.05), breaks = seq(0,0.05, by = 0.01), labels = scales::number_format(accuracy = 0.01), position = 'top') +
+    labs(x = '', y = expression('                                                                                           Depth'~(m))) +
+    scale_x_continuous(limits = c(0,0.03), breaks = seq(0,0.03, by = 0.01), labels = scales::number_format(accuracy = 0.01), position = 'top') +
     scale_y_continuous(limits = c(-8,0), breaks = seq(-8,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
@@ -2852,17 +2852,17 @@ gistoolOF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
-    scale_x_continuous(limits = c(0,0.05), breaks = seq(0,0.05, by = 0.01), labels = scales::number_format(accuracy = 0.01), position = 'top') +
+    scale_x_continuous(limits = c(0,0.03), breaks = seq(0,0.03, by = 0.01), labels = scales::number_format(accuracy = 0.01), position = 'top') +
     scale_y_continuous(limits = c(-8,0), breaks = seq(-8,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
   WB_AS_G4_DIP_b + theme_pub()
 
 
-  WB_AS_G1_DIP_b+ theme_pub() + theme(legend.justification = c(1,2.8), plot.tag.position = c(0.93,0.77), plot.tag = element_text(size = 22), axis.title = element_text(size = 18)) +
-    WB_AS_G2_DIP_b+ theme_pub() + theme(legend.justification = c(1,2.8), plot.tag.position = c(0.93,0.77), plot.tag = element_text(size = 22), axis.title = element_text(size = 18)) +
-    WB_AS_G3_DIP_b+ theme_pub() + theme(legend.justification = c(1,2.8), plot.tag.position = c(0.93,0.77), plot.tag = element_text(size = 22), axis.title = element_text(size = 18)) +
-    WB_AS_G4_DIP_b+ theme_pub() + theme(legend.justification = c(1,2.8), plot.tag.position = c(0.93,0.77), plot.tag = element_text(size = 22), axis.title = element_text(size = 18)) +
+  WB_AS_G1_DIP_b+ theme_pub() + theme(legend.justification = c(1,4.5), plot.tag.position = c(0.93,0.82), plot.tag = element_text(size = 22), axis.title = element_text(size = 18)) +
+    WB_AS_G2_DIP_b+ theme_pub() + theme(legend.justification = c(1,4.5), plot.tag.position = c(0.93,0.82), plot.tag = element_text(size = 22), axis.title = element_text(size = 18)) +
+    WB_AS_G3_DIP_b+ theme_pub() + theme(legend.justification = c(1,4.5), plot.tag.position = c(0.93,0.82), plot.tag = element_text(size = 22), axis.title = element_text(size = 18)) +
+    WB_AS_G4_DIP_b+ theme_pub() + theme(legend.justification = c(1,4.5), plot.tag.position = c(0.93,0.82), plot.tag = element_text(size = 22), axis.title = element_text(size = 18)) +
     plot_layout(ncol = 2) +
     plot_annotation(tag_levels = '1', tag_prefix = 'no. ') +
     ggsave(filename = 'WB_ASAG_DIP_b_vs_lower.tiff',
