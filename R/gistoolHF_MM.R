@@ -1910,10 +1910,10 @@ gistoolHF_MM <- function() {
     scale_shape_manual(values = c(22, 22, 24)) +
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
-    xlim(0,0.25) +
-    ylim(0,60) +
     xlab('Avg. DIN ('*'g N'~m^-3*')') +
-    ylab('Eelgrass production ('*' g C'~m^-2~GS^-1*')')
+    ylab('Eelgrass production ('*' g C'~m^-2~GS^-1*')') +
+    scale_x_continuous(limits = c(0,0.25), breaks = seq(0,0.25, by = 0.05), labels = scales::number_format(accuracy = 0.01)) +
+    scale_y_continuous(limits = c(0,80), breaks = seq(0,80, by = 10), labels = scales::number_format(accuracy = 1))
 
 
 
@@ -1926,10 +1926,10 @@ gistoolHF_MM <- function() {
     scale_shape_manual(values = c(22, 22, 24)) +
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
-    xlim(0,0.25) +
-    ylim(10,35) +
     xlab('Avg. DIN ('*'g N'~m^-3*')') +
-    ylab('Opp. macroalgae production ('*' g C'~m^-2~GS^-1*')')
+    ylab('Opp. macroalgae production ('*' g C'~m^-2~GS^-1*')') +
+    scale_x_continuous(limits = c(0,0.25), breaks = seq(0,0.25, by = 0.05), labels = scales::number_format(accuracy = 0.01)) +
+    scale_y_continuous(limits = c(0,80), breaks = seq(0,80, by = 10), labels = scales::number_format(accuracy = 1))
 
   WB_panel_PRBC1_vs_AvgDIN <<- WB_PRBC1_vs_AvgDIN + theme_pub()
 
@@ -1941,10 +1941,10 @@ gistoolHF_MM <- function() {
     scale_shape_manual(values = c(22, 22, 24)) +
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
-    xlim(0,0.25) +
-    ylim(0,250) +
     xlab('Avg. DIN ('*'g N'~m^-3*')') +
-    ylab('Phytoplankton production ('*'  g C'~m^-2~GS^-1*')')
+    ylab('Phytoplankton production ('*'  g C'~m^-2~GS^-1*')') +
+    scale_x_continuous(limits = c(0,0.25), breaks = seq(0,0.25, by = 0.05), labels = scales::number_format(accuracy = 0.01)) +
+    scale_y_continuous(limits = c(0,300), breaks = seq(0,300, by = 50), labels = scales::number_format(accuracy = 1))
 
   WB_panel_PRPC_vs_AvgDIN <<- WB_PRPC_vs_AvgDIN + theme_pub()
 
