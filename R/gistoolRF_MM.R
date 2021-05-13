@@ -1506,7 +1506,7 @@ gistoolRF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'black', 'black', 'white')) +
     labs(x = expression('Opp. macroalgae Production'~(g~C*~m^-2~GS^-1)), y = expression('Depth'~(m)))+
-    scale_x_continuous(limits = c(0,100), breaks = seq(0,100, by = 10), labels = scales::number_format(accuracy = 1), position = 'top') +
+    scale_x_continuous(limits = c(0,50), breaks = seq(0,50, by = 5), labels = scales::number_format(accuracy = 1), position = 'top') +
     scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
@@ -1534,7 +1534,7 @@ gistoolRF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'black', 'black', 'white')) +
     labs(x = expression('Benthic diatom Production'~(g~C*~m^-2~GS^-1)), y = expression('Depth'~(m)))+
-    scale_x_continuous(limits = c(0,210), breaks = seq(0,210, by = 20), labels = scales::number_format(accuracy = 1), position = 'top') +
+    scale_x_continuous(limits = c(0,50), breaks = seq(0,50, by = 5), labels = scales::number_format(accuracy = 1), position = 'top') +
     scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
@@ -1608,7 +1608,7 @@ gistoolRF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'black', 'black', 'white')) +
     labs(x = expression('Opp. macroalgae Production'~(g~C*~m^-2~GS^-1)), y = expression('Depth'~(m)))+
-    scale_x_continuous(limits = c(0,100), breaks = seq(0,100, by = 10), labels = scales::number_format(accuracy = 1), position = 'top') +
+    scale_x_continuous(limits = c(0,50), breaks = seq(0,50, by = 5), labels = scales::number_format(accuracy = 1), position = 'top') +
     scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
@@ -1636,7 +1636,7 @@ gistoolRF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'black', 'black', 'white')) +
     labs(x = expression('Benthic diatom Production'~(g~C*~m^-2~GS^-1)), y = expression('Depth'~(m)))+
-    scale_x_continuous(limits = c(0,210), breaks = seq(0,210, by = 20), labels = scales::number_format(accuracy = 1), position = 'top') +
+    scale_x_continuous(limits = c(0,50), breaks = seq(0,50, by = 5), labels = scales::number_format(accuracy = 1), position = 'top') +
     scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
@@ -1709,7 +1709,7 @@ gistoolRF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'black', 'black', 'white')) +
     labs(x = expression('Opp. macroalgae Production'~(g~C*~m^-2~GS^-1)), y = expression('Depth'~(m)))+
-    scale_x_continuous(limits = c(0,100), breaks = seq(0,100, by = 10), labels = scales::number_format(accuracy = 1), position = 'top') +
+    scale_x_continuous(limits = c(0,50), breaks = seq(0,50, by = 5), labels = scales::number_format(accuracy = 1), position = 'top') +
     scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
@@ -1737,7 +1737,7 @@ gistoolRF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'black', 'black', 'white')) +
     labs(x = expression('Benthic diatom Production'~(g~C*~m^-2~GS^-1)), y = expression('Depth'~(m)))+
-    scale_x_continuous(limits = c(0,210), breaks = seq(0,210, by = 20), labels = scales::number_format(accuracy = 1), position = 'top') +
+    scale_x_continuous(limits = c(0,50), breaks = seq(0,50, by = 5), labels = scales::number_format(accuracy = 1), position = 'top') +
     scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 2), labels = scales::number_format(accuracy = 1))
 
 
@@ -1872,7 +1872,7 @@ gistoolRF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = expression('                                                                                         Opp. macroalgae production'~(g~C*~m^-2*~GS^-1)), y = '') +
-    scale_x_continuous(limits = c(0,100), breaks = seq(0,100, by = 10), labels = scales::number_format(accuracy = 1), position = 'top') +
+    scale_x_continuous(limits = c(0,50), breaks = seq(0,50, by = 5), labels = scales::number_format(accuracy = 1), position = 'top') +
     scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 1), labels = scales::number_format(accuracy = 1))
 
 
@@ -1885,7 +1885,7 @@ gistoolRF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
-    scale_x_continuous(limits = c(0,100), breaks = seq(0,100, by = 10), labels = scales::number_format(accuracy = 1), position = 'top') +
+    scale_x_continuous(limits = c(0,50), breaks = seq(0,50, by = 5), labels = scales::number_format(accuracy = 1), position = 'top') +
     scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 1), labels = scales::number_format(accuracy = 1))
 
 
@@ -1898,7 +1898,7 @@ gistoolRF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = expression('                                                                                           Depth'~(m))) +
-    scale_x_continuous(limits = c(0,100), breaks = seq(0,100, by = 10), labels = scales::number_format(accuracy = 1), position = 'top') +
+    scale_x_continuous(limits = c(0,50), breaks = seq(0,50, by = 5), labels = scales::number_format(accuracy = 1), position = 'top') +
     scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 1), labels = scales::number_format(accuracy = 1))
 
 
@@ -1911,7 +1911,7 @@ gistoolRF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
-    scale_x_continuous(limits = c(0,100), breaks = seq(0,100, by = 10), labels = scales::number_format(accuracy = 1), position = 'top') +
+    scale_x_continuous(limits = c(0,50), breaks = seq(0,50, by = 5), labels = scales::number_format(accuracy = 1), position = 'top') +
     scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 1), labels = scales::number_format(accuracy = 1))
 
 
@@ -2010,7 +2010,7 @@ gistoolRF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = expression('                                                                                         Benthic diatom production'~(g~C*~m^-2*~GS^-1)), y = '') +
-    scale_x_continuous(limits = c(0,210), breaks = seq(0,210, by = 20), labels = scales::number_format(accuracy = 1), position = 'top') +
+    scale_x_continuous(limits = c(0,50), breaks = seq(0,50, by = 5), labels = scales::number_format(accuracy = 1), position = 'top') +
     scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 1), labels = scales::number_format(accuracy = 1))
 
 
@@ -2023,7 +2023,7 @@ gistoolRF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
-    scale_x_continuous(limits = c(0,210), breaks = seq(0,210, by = 20), labels = scales::number_format(accuracy = 1), position = 'top') +
+    scale_x_continuous(limits = c(0,50), breaks = seq(0,50, by = 5), labels = scales::number_format(accuracy = 1), position = 'top') +
     scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 1), labels = scales::number_format(accuracy = 1))
 
 
@@ -2036,7 +2036,7 @@ gistoolRF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = expression('                                                                                           Depth'~(m))) +
-    scale_x_continuous(limits = c(0,210), breaks = seq(0,210, by = 20), labels = scales::number_format(accuracy = 1), position = 'top') +
+    scale_x_continuous(limits = c(0,50), breaks = seq(0,50, by = 5), labels = scales::number_format(accuracy = 1), position = 'top') +
     scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 1), labels = scales::number_format(accuracy = 1))
 
 
@@ -2049,7 +2049,7 @@ gistoolRF_MM <- function() {
     scale_color_manual(values = c('black', 'black', 'black')) +
     scale_fill_manual(values = c('black', 'white', 'black')) +
     labs(x = '', y = '') +
-    scale_x_continuous(limits = c(0,210), breaks = seq(0,210, by = 20), labels = scales::number_format(accuracy = 1), position = 'top') +
+    scale_x_continuous(limits = c(0,50), breaks = seq(0,50, by = 5), labels = scales::number_format(accuracy = 1), position = 'top') +
     scale_y_continuous(limits = c(-6,0), breaks = seq(-6,0, by = 1), labels = scales::number_format(accuracy = 1))
 
 
